@@ -1,0 +1,195 @@
+name: Build Windows
+
+on:
+  workflow_dispatch:
+    inputs:
+      vscode_arch:
+        description: 'Architecture to build'
+        required: true
+        default: 'x64'
+        type: choice
+        options:
+          - x64
+          - arm64
+  push:
+    branches: [ master, main ]
+    paths-ignore:
+      - '**/*.md'
+  pull_request:
+    branches: [ master, main ]
+    paths-ignore:
+      - '**/*.md'
+
+env:
+  APP_NAME: VSCodium
+  BINARY_NAME: codium
+  OS_NAME: windows
+  VSCODE_QUALITY: stable
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      MS_COMMIT: ${{ env.MS_COMMIT }}
+      MS_TAG: ${{ env.MS_TAG }}
+      RELEASE_VERSION: ${{ env.RELEASE_VERSION }}
+      SHOULD_BUILD: ${{ env.SHOULD_BUILD }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Clone VSCode repo
+        run: ./get_repo.sh
+
+      - name: Check PR or cron
+        run: ./check_cron_or_pr.sh
+
+      - name: Check existing VSCodium tags/releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHECK_ALL: 'yes'
+        run: ./check_tags.sh
+
+  compile:
+    needs: check
+    runs-on: ubuntu-22.04
+    env:
+      MS_COMMIT: ${{ needs.check.outputs.MS_COMMIT }}
+      MS_TAG: ${{ needs.check.outputs.MS_TAG }}
+      RELEASE_VERSION: ${{ needs.check.outputs.RELEASE_VERSION }}
+      SHOULD_BUILD: ${{ needs.check.outputs.SHOULD_BUILD == 'yes' && 'yes' || 'no' }}
+      VSCODE_ARCH: 'x64'
+    outputs:
+      BUILD_SOURCEVERSION: ${{ env.BUILD_SOURCEVERSION }}
+
+    steps:
+      - uses: actions/checkout@v4
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Setup GCC
+        uses: egor-tensin/setup-gcc@v1
+        with:
+          version: 10
+          platform: x64
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.15.1'
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Setup Python 3
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Install libkrb5-dev
+        run: sudo apt-get update -y && sudo apt-get install -y libkrb5-dev
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Clone VSCode repo
+        run: ./get_repo.sh
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Build
+        env:
+          SHOULD_BUILD_REH: 'no'
+          SHOULD_BUILD_REH_WEB: 'no'
+        run: ./build.sh
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Compress vscode artifact
+        run: |
+          find vscode -type f -not -path "*/node_modules/*" -not -path "vscode/.build/node/*" -not -path "vscode/.git/*" > vscode.txt
+          echo "vscode/.build/extensions/node_modules" >> vscode.txt
+          echo "vscode/.git" >> vscode.txt
+          tar -czf vscode.tar.gz -T vscode.txt
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Upload vscode artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vscode
+          path: ./vscode.tar.gz
+          retention-days: 7
+        if: env.SHOULD_BUILD == 'yes'
+
+  build:
+    needs:
+      - check
+      - compile
+    runs-on: windows-2022
+    strategy:
+      fail-fast: false
+      matrix:
+        vscode_arch:
+          - ${{ github.event.inputs.vscode_arch || 'x64' }}
+    defaults:
+      run:
+        shell: bash
+    env:
+      BUILD_SOURCEVERSION: ${{ needs.compile.outputs.BUILD_SOURCEVERSION }}
+      MS_COMMIT: ${{ needs.check.outputs.MS_COMMIT }}
+      MS_TAG: ${{ needs.check.outputs.MS_TAG }}
+      RELEASE_VERSION: ${{ needs.check.outputs.RELEASE_VERSION }}
+      SHOULD_BUILD: ${{ needs.check.outputs.SHOULD_BUILD == 'yes' && 'yes' || 'no' }}
+      VSCODE_ARCH: ${{ matrix.vscode_arch }}
+
+    steps:
+      - uses: actions/checkout@v4
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.15.1'
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Setup Python 3
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Download vscode artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: vscode
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Extract vscode artifact
+        run: tar -xzf vscode.tar.gz
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Build Windows package
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          npm_config_arch: ${{ matrix.vscode_arch }}
+          npm_config_target_arch: ${{ matrix.vscode_arch }}
+        run: ./build/windows/package.sh
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Prepare assets
+        run: ./prepare_assets.sh
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Upload Windows artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: vscodium-windows-${{ matrix.vscode_arch }}
+          path: |
+            assets/*.exe
+            assets/*.msi
+            assets/*.zip
+          retention-days: 30
+        if: env.SHOULD_BUILD == 'yes'
+
+      - name: Upload checksums
+        uses: actions/upload-artifact@v4
+        with:
+          name: checksums-windows-${{ matrix.vscode_arch }}
+          path: assets/*.sha256
+          retention-days: 30
+        if: env.SHOULD_BUILD == 'yes'
