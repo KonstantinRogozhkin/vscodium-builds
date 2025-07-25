@@ -93,6 +93,8 @@ jobs:
     env:
       OS_NAME: windows
       VSCODE_ARCH: ${{ inputs.architecture }}
+      SHOULD_BUILD: 'yes'
+      VSCODE_QUALITY: stable
 
     steps:
       - uses: actions/checkout@v4
@@ -115,6 +117,13 @@ jobs:
 
       - name: Extract vscode artifact
         run: tar -xzf vscode.tar.gz
+        if: ${{ !inputs.skip_compile }}
+
+      - name: Get version info
+        run: |
+          cd vscode
+          echo "MS_TAG=$(cat .yarnrc | grep target | cut -d'"' -f4)" >> $GITHUB_ENV
+          echo "RELEASE_VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
         if: ${{ !inputs.skip_compile }}
 
       - name: Build Windows package

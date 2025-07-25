@@ -163,6 +163,13 @@ jobs:
         run: tar -xzf vscode.tar.gz
         if: env.SHOULD_BUILD == 'yes'
 
+      - name: Get version info
+        run: |
+          cd vscode
+          echo "MS_TAG=$(cat .yarnrc | grep target | cut -d'"' -f4)" >> $GITHUB_ENV
+          echo "RELEASE_VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
+        if: env.SHOULD_BUILD == 'yes'
+
       - name: Build Windows package
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
