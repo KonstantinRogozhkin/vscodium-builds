@@ -215,6 +215,13 @@ rustup update
 cargo clean
 ```
 
+### Ошибки msvs_version (Windows)
+```bash
+# ❌ УСТАРЕЛО: npm config set msvs_version 2019
+# ✅ ПРАВИЛЬНО: node-gyp автоматически находит Build Tools
+# Убедитесь, что установлены Visual Studio Build Tools с поддержкой C++
+```
+
 ### Нехватка места
 ```bash
 # Очистка Docker

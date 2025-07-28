@@ -237,6 +237,20 @@ sudo apt install python3.11
 # Настройка npm
 npm config set python $(which python3)
 export PYTHON=$(which python3)
+
+### Ошибка "npm config set msvs_version is not a valid npm command"
+
+**Проблема:** Команда `npm config set msvs_version` устарела и была удалена в последних версиях npm.
+
+**Решение:**
+```bash
+# ❌ НЕ НУЖНО: npm config set msvs_version 2019
+# ✅ ПРАВИЛЬНО: node-gyp автоматически находит Build Tools
+
+# Убедитесь, что установлены Visual Studio Build Tools с поддержкой C++
+# Проверьте, что установлена рабочая нагрузка "Desktop development with C++"
+# Перезапустите терминал и попробуйте сборку снова
+```
 ```
 
 ### Ошибки компиляции TypeScript

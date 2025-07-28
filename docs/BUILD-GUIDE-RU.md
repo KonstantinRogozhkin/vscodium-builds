@@ -53,6 +53,10 @@ rustc --version   # rustc 1.70+
 
 # Или через Chocolatey
 choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.VCTools"
+
+# ⚠️ ВАЖНО: Убедитесь, что установлена рабочая нагрузка "Разработка классических приложений на C++"
+# node-gyp автоматически найдет установленные Build Tools без дополнительной настройки
+# Команда npm config set msvs_version больше не нужна и была удалена в новых версиях npm
 ```
 
 #### 2. Установка Node.js и Python
@@ -588,6 +592,18 @@ rustup update
 
 # Очистка кэша Cargo
 cargo clean
+```
+
+#### 4. Ошибки с msvs_version
+```bash
+# ❌ УСТАРЕЛО: npm config set msvs_version 2019
+# ✅ ПРАВИЛЬНО: node-gyp автоматически находит Build Tools
+
+# Если появляется ошибка "npm config set msvs_version is not a valid npm command":
+# 1. Убедитесь, что установлены Visual Studio Build Tools с поддержкой C++
+# 2. Проверьте, что установлена рабочая нагрузка "Desktop development with C++"
+# 3. Перезапустите терминал и попробуйте сборку снова
+# 4. node-gyp автоматически определит доступные версии Visual Studio
 ```
 
 ## ⚡ Продвинутые настройки
