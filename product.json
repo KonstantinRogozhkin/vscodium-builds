@@ -1,4 +1,7 @@
 {
+  "configurationDefaults": {
+    "workbench.appearance.locale": "ru"
+  },
   "extensionAllowedBadgeProviders": [
     "api.bintray.com",
     "api.travis-ci.com",

@@ -19,6 +19,8 @@ export SKIP_SOURCE="no"
 export VSCODE_LATEST="no"
 export VSCODE_QUALITY="stable"
 export VSCODE_SKIP_NODE_VERSION_CHECK="yes"
+# Path to Neira Agent extension VSIX file
+export NEIRA_AGENT_EXTENSION_PATH="/Users/konstantin/Projects/continue/extensions/vscode/neira-agent-1.1.67.vsix"
 
 while getopts ":ilops" opt; do
   case "$opt" in

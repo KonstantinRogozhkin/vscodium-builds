@@ -1,0 +1,3504 @@
+🚀 Starting fast build for Neira (osx-arm64)
+📋 Build options:
+   USE_CACHE: yes
+   SKIP_DEPENDENCY_INSTALL: no
+🔄 Attempting to restore dependencies from cache...
+🔄 Restoring dependencies from cache...
+📦 Restoring main node_modules...
+🧩 Restoring extension dependencies...
+✅ Dependencies restored successfully!
+🔨 Running main build process...
+++ . version.sh
++++ [[ -z '' ]]
++++ type -t sha1sum
+++++ echo ''
+++++ sha1sum
+++++ cut '-d ' -f1
++++ BUILD_SOURCEVERSION=adc83b19e793491b1c6ea0fd8b46cd9f32e592fc
++++ echo 'BUILD_SOURCEVERSION="adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"'
+BUILD_SOURCEVERSION="adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"
++++ [[ -n '' ]]
++++ export BUILD_SOURCEVERSION
+++ [[ yes == \y\e\s ]]
+++ echo 'MS_COMMIT=""'
+MS_COMMIT=""
+++ . prepare_vscode.sh
++++ set -e
++++ . ./utils.sh
+++++ APP_NAME=Neira
++++++ echo Neira
++++++ awk '{print tolower($0)}'
+++++ APP_NAME_LC=neira
+++++ ASSETS_REPOSITORY=Neira/neira
+++++ BINARY_NAME=neira
+++++ GH_REPO_PATH=Neira/neira
+++++ ORG_NAME=Neira
+++++ exists gsed
+++++ type -t gsed
++++ [[ stable == \i\n\s\i\d\e\r ]]
++++ cp -rp src/stable/resources src/stable/src vscode/
++++ cp -f LICENSE vscode/LICENSE.txt
++++ cd vscode
++++ ../update_settings.sh
+File to update setting in does not exist src/vs/workbench/electron-sandbox/desktop.contribution.ts
+'default': true not found for setting  TelemetryConfiguration.ON in file src/vs/platform/telemetry/common/telemetryService.ts
+'default': true not found for setting workbench.settings.enableNaturalLanguageSearch in file src/vs/workbench/contrib/preferences/common/preferencesContribution.ts
+APP_NAME="Neira"
+APP_NAME_LC="neira"
+BINARY_NAME="neira"
+GH_REPO_PATH="Neira/neira"
+ORG_NAME="Neira"
+applying patch: ../patches/add-remote-url.patch
+error: patch failed: build/gulpfile.reh.js:321
+error: build/gulpfile.reh.js: patch does not apply
+error: patch failed: build/gulpfile.vscode.js:288
+error: build/gulpfile.vscode.js: patch does not apply
+WARNING: failed to apply patch ../patches/add-remote-url.patch, continuing...
+applying patch: ../patches/binary-name.patch
+error: patch failed: build/gulpfile.vscode.js:376
+error: build/gulpfile.vscode.js: patch does not apply
+error: patch failed: src/vs/platform/native/electron-main/nativeHostMainService.ts:445
+error: src/vs/platform/native/electron-main/nativeHostMainService.ts: patch does not apply
+WARNING: failed to apply patch ../patches/binary-name.patch, continuing...
+applying patch: ../patches/brand.patch
+error: patch failed: extensions/configuration-editing/src/configurationEditingMain.ts:54
+error: extensions/configuration-editing/src/configurationEditingMain.ts: patch does not apply
+error: patch failed: extensions/configuration-editing/src/settingsDocumentHelper.ts:123
+error: extensions/configuration-editing/src/settingsDocumentHelper.ts: patch does not apply
+error: patch failed: extensions/css-language-features/package.nls.json:4
+error: extensions/css-language-features/package.nls.json: patch does not apply
+error: patch failed: extensions/emmet/package.nls.json:1
+error: extensions/emmet/package.nls.json: patch does not apply
+error: patch failed: extensions/extension-editing/src/constants.ts:8
+error: extensions/extension-editing/src/constants.ts: patch does not apply
+error: patch failed: extensions/extension-editing/src/extensionLinter.ts:34
+error: extensions/extension-editing/src/extensionLinter.ts: patch does not apply
+error: patch failed: extensions/git/package.nls.json:228
+error: extensions/git/package.nls.json: patch does not apply
+error: patch failed: extensions/github/package.nls.json:2
+error: extensions/github/package.nls.json: patch does not apply
+error: patch failed: extensions/grunt/package.nls.json:1
+error: extensions/grunt/package.nls.json: patch does not apply
+error: patch failed: extensions/html-language-features/client/src/htmlClient.ts:109
+error: extensions/html-language-features/client/src/htmlClient.ts: patch does not apply
+error: patch failed: extensions/html-language-features/package.nls.json:3
+error: extensions/html-language-features/package.nls.json: patch does not apply
+error: patch failed: extensions/html-language-features/schemas/package.schema.json:9
+error: extensions/html-language-features/schemas/package.schema.json: patch does not apply
+error: patch failed: extensions/jake/package.nls.json:1
+error: extensions/jake/package.nls.json: patch does not apply
+error: patch failed: extensions/json-language-features/package.nls.json:11
+error: extensions/json-language-features/package.nls.json: patch does not apply
+error: patch failed: extensions/markdown-language-features/package.nls.json:22
+error: extensions/markdown-language-features/package.nls.json: patch does not apply
+error: patch failed: extensions/media-preview/package.nls.json:2
+error: extensions/media-preview/package.nls.json: patch does not apply
+error: patch failed: extensions/media-preview/src/audioPreview.ts:82
+error: extensions/media-preview/src/audioPreview.ts: patch does not apply
+error: patch failed: extensions/media-preview/src/imagePreview/index.ts:209
+error: extensions/media-preview/src/imagePreview/index.ts: patch does not apply
+error: patch failed: extensions/media-preview/src/videoPreview.ts:86
+error: extensions/media-preview/src/videoPreview.ts: patch does not apply
+error: patch failed: extensions/notebook-renderers/package.json:22
+error: extensions/notebook-renderers/package.json: patch does not apply
+error: patch failed: extensions/npm/package.nls.json:2
+error: extensions/npm/package.nls.json: patch does not apply
+error: patch failed: extensions/swift/syntaxes/swift.tmLanguage.json:260
+error: extensions/swift/syntaxes/swift.tmLanguage.json: patch does not apply
+error: patch failed: extensions/typescript-language-features/package.nls.json:80
+error: extensions/typescript-language-features/package.nls.json: patch does not apply
+error: patch failed: extensions/typescript-language-features/src/tsServer/versionManager.ts:100
+error: extensions/typescript-language-features/src/tsServer/versionManager.ts: patch does not apply
+error: patch failed: extensions/typescript-language-features/src/tsServer/versionProvider.electron.ts:70
+error: extensions/typescript-language-features/src/tsServer/versionProvider.electron.ts: patch does not apply
+error: patch failed: extensions/typescript-language-features/src/tsconfig.ts:155
+error: extensions/typescript-language-features/src/tsconfig.ts: patch does not apply
+error: patch failed: extensions/typescript-language-features/src/typescriptServiceClient.ts:653
+error: extensions/typescript-language-features/src/typescriptServiceClient.ts: patch does not apply
+error: patch failed: extensions/vscode-api-tests/package.json:2
+error: extensions/vscode-api-tests/package.json: patch does not apply
+error: patch failed: extensions/vscode-colorize-tests/package.json:2
+error: extensions/vscode-colorize-tests/package.json: patch does not apply
+error: patch failed: extensions/vscode-colorize-tests/test/colorize-fixtures/14119.less:1
+error: extensions/vscode-colorize-tests/test/colorize-fixtures/14119.less: patch does not apply
+error: patch failed: extensions/vscode-colorize-tests/test/colorize-results/14119_less.json:114
+error: extensions/vscode-colorize-tests/test/colorize-results/14119_less.json: patch does not apply
+error: patch failed: extensions/vscode-test-resolver/package.json:2
+error: extensions/vscode-test-resolver/package.json: patch does not apply
+error: patch failed: extensions/vscode-test-resolver/src/download.ts:32
+error: extensions/vscode-test-resolver/src/download.ts: patch does not apply
+error: patch failed: extensions/vscode-test-resolver/src/extension.ts:178
+error: extensions/vscode-test-resolver/src/extension.ts: patch does not apply
+error: patch failed: src/main.ts:407
+error: src/main.ts: patch does not apply
+error: patch failed: src/vs/code/electron-main/app.ts:526
+error: src/vs/code/electron-main/app.ts: patch does not apply
+error: patch failed: src/vs/editor/contrib/toggleTabFocusMode/browser/toggleTabFocusMode.ts:19
+error: src/vs/editor/contrib/toggleTabFocusMode/browser/toggleTabFocusMode.ts: patch does not apply
+error: patch failed: src/vs/platform/contextkey/common/contextkeys.ts:19
+error: src/vs/platform/contextkey/common/contextkeys.ts: patch does not apply
+error: patch failed: src/vs/platform/extensionManagement/node/extensionManagementService.ts:153
+error: src/vs/platform/extensionManagement/node/extensionManagementService.ts: patch does not apply
+error: patch failed: src/vs/platform/extensions/common/extensionValidator.ts:374
+error: src/vs/platform/extensions/common/extensionValidator.ts: patch does not apply
+error: patch failed: src/vs/platform/externalTerminal/node/externalTerminalService.ts:17
+error: src/vs/platform/externalTerminal/node/externalTerminalService.ts: patch does not apply
+error: patch failed: src/vs/platform/terminal/common/terminalPlatformConfiguration.ts:338
+error: src/vs/platform/terminal/common/terminalPlatformConfiguration.ts: patch does not apply
+error: patch failed: src/vs/platform/update/common/update.config.contribution.ts:47
+error: src/vs/platform/update/common/update.config.contribution.ts: patch does not apply
+error: patch failed: src/vs/platform/update/electron-main/abstractUpdateService.ts:23
+error: src/vs/platform/update/electron-main/abstractUpdateService.ts: patch does not apply
+error: patch failed: src/vs/platform/update/electron-main/updateService.darwin.ts:122
+error: src/vs/platform/update/electron-main/updateService.darwin.ts: patch does not apply
+error: patch failed: src/vs/server/node/server.cli.ts:469
+error: src/vs/server/node/server.cli.ts: patch does not apply
+error: patch failed: src/vs/workbench/api/browser/mainThreadAuthentication.ts:454
+error: src/vs/workbench/api/browser/mainThreadAuthentication.ts: patch does not apply
+error: patch failed: src/vs/workbench/api/browser/viewsExtensionPoint.ts:43
+error: src/vs/workbench/api/browser/viewsExtensionPoint.ts: patch does not apply
+error: patch failed: src/vs/workbench/api/common/extHostApiCommands.ts:436
+error: src/vs/workbench/api/common/extHostApiCommands.ts: patch does not apply
+error: patch failed: src/vs/workbench/api/common/extHostCommands.ts:466
+error: src/vs/workbench/api/common/extHostCommands.ts: patch does not apply
+error: patch failed: src/vs/workbench/api/test/browser/extHostNotebook.test.ts:364
+error: src/vs/workbench/api/test/browser/extHostNotebook.test.ts: patch does not apply
+error: patch failed: src/vs/workbench/browser/actions/helpActions.ts:163
+error: src/vs/workbench/browser/actions/helpActions.ts: patch does not apply
+error: patch failed: src/vs/workbench/browser/web.factory.ts:35
+error: src/vs/workbench/browser/web.factory.ts: patch does not apply
+error: patch failed: src/vs/workbench/browser/workbench.contribution.ts:697
+error: src/vs/workbench/browser/workbench.contribution.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/chat/browser/chatSetup.ts:146
+error: src/vs/workbench/contrib/chat/browser/chatSetup.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/debug/browser/debugAdapterManager.ts:177
+error: src/vs/workbench/contrib/debug/browser/debugAdapterManager.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts:337
+error: src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/extensions/browser/extensionsActions.ts:109
+error: src/vs/workbench/contrib/extensions/browser/extensionsActions.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/extensions/browser/extensionsWorkbenchService.ts:476
+error: src/vs/workbench/contrib/extensions/browser/extensionsWorkbenchService.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/extensions/common/extensionsFileTemplate.ts:29
+error: src/vs/workbench/contrib/extensions/common/extensionsFileTemplate.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/externalUriOpener/common/configuration.ts:57
+error: src/vs/workbench/contrib/externalUriOpener/common/configuration.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/localization/common/localization.contribution.ts:58
+error: src/vs/workbench/contrib/localization/common/localization.contribution.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/localization/common/localizationsActions.ts:26
+error: src/vs/workbench/contrib/localization/common/localizationsActions.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/preferences/browser/keyboardLayoutPicker.ts:95
+error: src/vs/workbench/contrib/preferences/browser/keyboardLayoutPicker.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/tasks/browser/abstractTaskService.ts:3321
+error: src/vs/workbench/contrib/tasks/browser/abstractTaskService.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/tasks/common/jsonSchemaCommon.ts:193
+error: src/vs/workbench/contrib/tasks/common/jsonSchemaCommon.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/tasks/common/jsonSchema_v2.ts:424
+error: src/vs/workbench/contrib/tasks/common/jsonSchema_v2.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/terminal/browser/terminalView.ts:214
+error: src/vs/workbench/contrib/terminal/browser/terminalView.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/terminal/common/terminalConfiguration.ts:314
+error: src/vs/workbench/contrib/terminal/common/terminalConfiguration.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/terminalContrib/autoReplies/common/terminalAutoRepliesConfiguration.ts:19
+error: src/vs/workbench/contrib/terminalContrib/autoReplies/common/terminalAutoRepliesConfiguration.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/update/browser/update.ts:583
+error: src/vs/workbench/contrib/update/browser/update.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/url/browser/trustedDomainsFileSystemProvider.ts:55
+error: src/vs/workbench/contrib/url/browser/trustedDomainsFileSystemProvider.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.contribution.ts:49
+error: src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.contribution.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.ts:20
+error: src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedExtensionPoint.ts:161
+error: src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedExtensionPoint.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/welcomeGettingStarted/common/gettingStartedContent.ts:15
+error: src/vs/workbench/contrib/welcomeGettingStarted/common/gettingStartedContent.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/welcomeWalkthrough/browser/editor/vs_code_editor_walkthrough.ts:13
+error: src/vs/workbench/contrib/welcomeWalkthrough/browser/editor/vs_code_editor_walkthrough.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/workspace/browser/workspace.contribution.ts:733
+error: src/vs/workbench/contrib/workspace/browser/workspace.contribution.ts: patch does not apply
+error: patch failed: src/vs/workbench/services/extensionManagement/common/extensionManagementService.ts:1044
+error: src/vs/workbench/services/extensionManagement/common/extensionManagementService.ts: patch does not apply
+error: patch failed: src/vs/workbench/services/extensions/common/extensionsRegistry.ts:181
+error: src/vs/workbench/services/extensions/common/extensionsRegistry.ts: patch does not apply
+error: patch failed: src/vs/workbench/services/userDataProfile/browser/userDataProfileManagement.ts:199
+error: src/vs/workbench/services/userDataProfile/browser/userDataProfileManagement.ts: patch does not apply
+WARNING: failed to apply patch ../patches/brand.patch, continuing...
+applying patch: ../patches/chat.patch
+error: patch failed: src/vs/workbench/contrib/chat/browser/chat.contribution.ts:142
+error: src/vs/workbench/contrib/chat/browser/chat.contribution.ts: patch does not apply
+WARNING: failed to apply patch ../patches/chat.patch, continuing...
+applying patch: ../patches/cli.patch
+error: patch failed: cli/src/commands/serve_web.rs:730
+error: cli/src/commands/serve_web.rs: patch does not apply
+error: patch failed: cli/src/constants.rs:35
+error: cli/src/constants.rs: patch does not apply
+error: patch failed: cli/src/options.rs:9
+error: cli/src/options.rs: patch does not apply
+error: patch failed: cli/src/tunnels/code_server.rs:457
+error: cli/src/tunnels/code_server.rs: patch does not apply
+error: patch failed: cli/src/tunnels/paths.rs:100
+error: cli/src/tunnels/paths.rs: patch does not apply
+error: patch failed: cli/src/update_service.rs:10
+error: cli/src/update_service.rs: patch does not apply
+WARNING: failed to apply patch ../patches/cli.patch, continuing...
+applying patch: ../patches/disable-cloud.patch
+error: patch failed: src/vs/workbench/contrib/editSessions/browser/editSessionsStorageService.ts:7
+error: src/vs/workbench/contrib/editSessions/browser/editSessionsStorageService.ts: patch does not apply
+WARNING: failed to apply patch ../patches/disable-cloud.patch, continuing...
+applying patch: ../patches/disable-signature-verification.patch
+error: patch failed: src/vs/platform/extensionManagement/node/extensionManagementService.ts:36
+error: src/vs/platform/extensionManagement/node/extensionManagementService.ts: patch does not apply
+WARNING: failed to apply patch ../patches/disable-signature-verification.patch, continuing...
+applying patch: ../patches/ext-from-gh.patch
+error: patch failed: build/lib/builtInExtensions.js:87
+error: build/lib/builtInExtensions.js: patch does not apply
+error: patch failed: build/lib/builtInExtensions.ts:75
+error: build/lib/builtInExtensions.ts: patch does not apply
+WARNING: failed to apply patch ../patches/ext-from-gh.patch, continuing...
+applying patch: ../patches/extensions-disable-mangler.patch
+error: patch failed: extensions/mangle-loader.js:37
+error: extensions/mangle-loader.js: patch does not apply
+WARNING: failed to apply patch ../patches/extensions-disable-mangler.patch, continuing...
+applying patch: ../patches/feat-announcements.patch
+error: patch failed: src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.ts:117
+error: src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.ts: patch does not apply
+WARNING: failed to apply patch ../patches/feat-announcements.patch, continuing...
+applying patch: ../patches/feat-ext-unsafe.patch
+applying patch: ../patches/fix-duplicate-excludeUnsafes.patch
+applying patch: ../patches/fix-eol-banner.patch
+error: patch failed: src/vs/workbench/browser/parts/banner/bannerPart.ts:11
+error: src/vs/workbench/browser/parts/banner/bannerPart.ts: patch does not apply
+error: patch failed: src/vs/workbench/services/banner/browser/bannerService.ts:10
+error: src/vs/workbench/services/banner/browser/bannerService.ts: patch does not apply
+WARNING: failed to apply patch ../patches/fix-eol-banner.patch, continuing...
+applying patch: ../patches/fix-remote-libs.patch
+error: patch failed: remote/package-lock.json:40
+error: remote/package-lock.json: patch does not apply
+error: patch failed: remote/package.json:35
+error: remote/package.json: patch does not apply
+WARNING: failed to apply patch ../patches/fix-remote-libs.patch, continuing...
+applying patch: ../patches/merge-user-product.patch
+error: patch failed: src/main.ts:8
+error: src/main.ts: patch does not apply
+WARNING: failed to apply patch ../patches/merge-user-product.patch, continuing...
+applying patch: ../patches/optional-tree-sitter.patch
+error: patch failed: build/package-lock.json:59
+error: build/package-lock.json: patch does not apply
+error: patch failed: build/package.json:53
+error: build/package.json: patch does not apply
+WARNING: failed to apply patch ../patches/optional-tree-sitter.patch, continuing...
+applying patch: ../patches/policies.patch
+error: patch failed: build/.moduleignore:126
+error: build/.moduleignore: patch does not apply
+error: patch failed: build/lib/policies.js:81
+error: build/lib/policies.js: patch does not apply
+error: patch failed: build/lib/policies.ts:107
+error: build/lib/policies.ts: patch does not apply
+error: patch failed: eslint.config.js:788
+error: eslint.config.js: patch does not apply
+error: patch failed: package-lock.json:18
+error: package-lock.json: patch does not apply
+error: patch failed: package.json:77
+error: package.json: patch does not apply
+error: patch failed: src/vs/base/test/node/uri.perf.data.txt:14698
+error: src/vs/base/test/node/uri.perf.data.txt: patch does not apply
+error: patch failed: src/vs/platform/environment/test/node/nativeModules.integrationTest.ts:62
+error: src/vs/platform/environment/test/node/nativeModules.integrationTest.ts: patch does not apply
+error: patch failed: src/vs/platform/policy/node/nativePolicyService.ts:8
+error: src/vs/platform/policy/node/nativePolicyService.ts: patch does not apply
+WARNING: failed to apply patch ../patches/policies.patch, continuing...
+applying patch: ../patches/remove-mangle.patch
+error: patch failed: build/lib/compilation.js:145
+error: build/lib/compilation.js: patch does not apply
+error: patch failed: build/lib/compilation.ts:18
+error: build/lib/compilation.ts: patch does not apply
+WARNING: failed to apply patch ../patches/remove-mangle.patch, continuing...
+applying patch: ../patches/report-issue.patch
+error: patch failed: src/vs/workbench/contrib/extensions/electron-browser/extensionsSlowActions.ts:153
+error: src/vs/workbench/contrib/extensions/electron-browser/extensionsSlowActions.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/issue/browser/baseIssueReporterService.ts:591
+error: src/vs/workbench/contrib/issue/browser/baseIssueReporterService.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/issue/browser/issueReporterModel.ts:92
+error: src/vs/workbench/contrib/issue/browser/issueReporterModel.ts: patch does not apply
+error: patch failed: src/vs/workbench/contrib/issue/browser/issueReporterPage.ts:14
+error: src/vs/workbench/contrib/issue/browser/issueReporterPage.ts: patch does not apply
+WARNING: failed to apply patch ../patches/report-issue.patch, continuing...
+applying patch: ../patches/terminal-suggest.patch
+error: extensions/terminal-suggest/src/completions/codium-insiders.ts: already exists in working directory
+error: extensions/terminal-suggest/src/completions/codium.ts: already exists in working directory
+error: patch failed: extensions/terminal-suggest/src/terminalSuggestMain.ts:30
+error: extensions/terminal-suggest/src/terminalSuggestMain.ts: patch does not apply
+WARNING: failed to apply patch ../patches/terminal-suggest.patch, continuing...
+applying patch: ../patches/update-cache-path.patch
+error: patch failed: src/vs/platform/update/electron-main/updateService.win32.ts:56
+error: src/vs/platform/update/electron-main/updateService.win32.ts: patch does not apply
+WARNING: failed to apply patch ../patches/update-cache-path.patch, continuing...
+applying patch: ../patches/use-github-pat.patch
+error: patch failed: extensions/github-authentication/src/common/env.ts:7
+error: extensions/github-authentication/src/common/env.ts: patch does not apply
+WARNING: failed to apply patch ../patches/use-github-pat.patch, continuing...
+applying patch: ../patches/version-0-release.patch
+error: patch failed: build/gulpfile.vscode.linux.js:27
+error: build/gulpfile.vscode.linux.js: patch does not apply
+error: patch failed: src/vs/workbench/api/common/extHost.api.impl.ts:1537
+error: src/vs/workbench/api/common/extHost.api.impl.ts: patch does not apply
+WARNING: failed to apply patch ../patches/version-0-release.patch, continuing...
+applying patch: ../patches/version-1-update.patch
+error: patch failed: src/vs/platform/update/common/update.ts:51
+error: src/vs/platform/update/common/update.ts: patch does not apply
+error: patch failed: src/vs/platform/update/electron-main/abstractUpdateService.ts:14
+error: src/vs/platform/update/electron-main/abstractUpdateService.ts: patch does not apply
+error: patch failed: src/vs/platform/update/electron-main/updateService.darwin.ts:15
+error: src/vs/platform/update/electron-main/updateService.darwin.ts: patch does not apply
+error: patch failed: src/vs/platform/update/electron-main/updateService.linux.ts:15
+error: src/vs/platform/update/electron-main/updateService.linux.ts: patch does not apply
+error: patch failed: src/vs/platform/update/electron-main/updateService.win32.ts:11
+error: src/vs/platform/update/electron-main/updateService.win32.ts: patch does not apply
+WARNING: failed to apply patch ../patches/version-1-update.patch, continuing...
+applying patch: ../patches/osx/fix-codesign.patch
+error: patch failed: build/darwin/sign.js:56
+error: build/darwin/sign.js: patch does not apply
+error: patch failed: build/darwin/sign.ts:60
+error: build/darwin/sign.ts: patch does not apply
+WARNING: failed to apply patch ../patches/osx/fix-codesign.patch, continuing...
+applying patch: ../patches/osx/fix-emulated-urls.patch
+error: patch failed: src/vs/workbench/electron-browser/window.ts:251
+error: src/vs/workbench/electron-browser/window.ts: patch does not apply
+WARNING: failed to apply patch ../patches/osx/fix-emulated-urls.patch, continuing...
++++ export ELECTRON_SKIP_BINARY_DOWNLOAD=1
++++ ELECTRON_SKIP_BINARY_DOWNLOAD=1
++++ export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
++++ PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
++++ [[ osx == \l\i\n\u\x ]]
++++ [[ osx == \w\i\n\d\o\w\s ]]
++++ [[ no != \n\o ]]
++++ mv .npmrc .npmrc.bak
++++ cp ../npmrc .npmrc
++++ for i in '{1..5}'
++++ [[ no != \n\o ]]
++++ npm ci
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@vscode/gulp-electron@1.37.1',
+npm warn EBADENGINE   required: { node: '>=22' },
+npm warn EBADENGINE   current: { node: 'v20.19.4', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@electron/get@4.0.1',
+npm warn EBADENGINE   required: { node: '>=22.12.0' },
+npm warn EBADENGINE   current: { node: 'v20.19.4', npm: '10.8.2' }
+npm warn EBADENGINE }
+npm warn deprecated osenv@0.1.5: This package is no longer supported.
+npm warn deprecated is-data-descriptor@1.0.0: Please upgrade to v1.0.1
+npm warn deprecated is-accessor-descriptor@1.0.0: Please upgrade to v1.0.1
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated is-accessor-descriptor@0.1.6: Please upgrade to v0.1.7
+npm warn deprecated is-data-descriptor@0.1.4: Please upgrade to v0.1.5
+npm warn deprecated is-data-descriptor@0.1.4: Please upgrade to v0.1.5
+npm warn deprecated is-accessor-descriptor@0.1.6: Please upgrade to v0.1.7
+npm warn deprecated is-accessor-descriptor@0.1.6: Please upgrade to v0.1.7
+npm warn deprecated is-data-descriptor@0.1.4: Please upgrade to v0.1.5
+npm warn deprecated is-data-descriptor@0.1.4: Please upgrade to v0.1.5
+npm warn deprecated is-accessor-descriptor@0.1.6: Please upgrade to v0.1.7
+npm warn deprecated is-accessor-descriptor@0.1.6: Please upgrade to v0.1.7
+npm warn deprecated is-data-descriptor@0.1.4: Please upgrade to v0.1.5
+npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm warn deprecated source-map-resolve@0.6.0: See https://github.com/lydell/source-map-resolve#deprecated
+npm warn deprecated eslint-plugin-local@6.0.0: Since the coming of ESLint flat config file, you can specify local rules without the need of this package. For running ESLint rule unit tests, use eslint-rule-tester instead
+npm warn deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm warn deprecated glob@5.0.15: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.1.6: Glob versions prior to v9 are no longer supported
+npm warn deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm warn deprecated glob@7.1.7: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.1.7: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.1.6: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.1.6: Glob versions prior to v9 are no longer supported
+npm warn deprecated source-map-url@0.4.0: See https://github.com/lydell/source-map-url#deprecated
+npm warn deprecated asar@3.0.3: Please use @electron/asar moving forward.  There is no API change, just a package name change
+npm warn deprecated fsevents@1.2.13: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+npm warn deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+npm warn deprecated gulp-vinyl-zip@2.1.2: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated fstream@1.0.12: This package is no longer supported.
+npm warn deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
+npm warn deprecated sinon@12.0.1: 16.1.1
+npm warn deprecated @azure/core-http@2.3.2: This package is no longer supported. Please migrate to use @azure/core-rest-pipeline
+
+> preinstall
+> node build/npm/preinstall.js
+
+
+> postinstall
+> node build/npm/postinstall.js
+
+[] Removed @parcel/watcher prebuilt module /Users/konstantin/Projects/vscodium-builds/vscode/node_modules/@parcel/watcher-darwin-arm64
+[build] Installing dependencies...
+[build] $ npm ci
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated electron-osx-sign@0.4.16: Please use @electron/osx-sign moving forward. Be aware the API is slightly different
+
+added 372 packages, and audited 373 packages in 9s
+
+51 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[extensions] Installing dependencies...
+[extensions] $ npm ci
+
+> vscode-extensions@0.0.1 postinstall
+> node ./postinstall.mjs
+
+Removed /Users/konstantin/Projects/vscodium-builds/vscode/extensions/node_modules/typescript/LICENSE.txt
+Removed /Users/konstantin/Projects/vscodium-builds/vscode/extensions/node_modules/typescript/README.md
+Removed /Users/konstantin/Projects/vscodium-builds/vscode/extensions/node_modules/typescript/SECURITY.md
+Removed /Users/konstantin/Projects/vscodium-builds/vscode/extensions/node_modules/typescript/ThirdPartyNoticeText.txt
+Removed /Users/konstantin/Projects/vscodium-builds/vscode/extensions/node_modules/typescript/bin
+removed '/Users/konstantin/Projects/vscodium-builds/vscode/extensions/node_modules/typescript/lib/_tsc.js'
+removed '/Users/konstantin/Projects/vscodium-builds/vscode/extensions/node_modules/typescript/lib/tsc.js'
+removed '/Users/konstantin/Projects/vscodium-builds/vscode/extensions/node_modules/typescript/lib/tsserverlibrary.d.ts'
+
+added 19 packages, and audited 20 packages in 9s
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[extensions] Removed @parcel/watcher prebuilt module /Users/konstantin/Projects/vscodium-builds/vscode/extensions/node_modules/@parcel/watcher-darwin-arm64
+[extensions/configuration-editing] Installing dependencies...
+[extensions/configuration-editing] $ npm ci
+
+added 19 packages, and audited 20 packages in 519ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[extensions/css-language-features] Installing dependencies...
+[extensions/css-language-features] $ npm ci
+
+added 11 packages, and audited 12 packages in 533ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[extensions/css-language-features/server] Installing dependencies...
+[extensions/css-language-features/server] $ npm ci
+
+added 12 packages, and audited 13 packages in 823ms
+
+found 0 vulnerabilities
+[extensions/debug-auto-launch] Installing dependencies...
+[extensions/debug-auto-launch] $ npm ci
+
+added 2 packages, and audited 3 packages in 803ms
+
+found 0 vulnerabilities
+[extensions/debug-server-ready] Installing dependencies...
+[extensions/debug-server-ready] $ npm ci
+
+added 2 packages, and audited 3 packages in 752ms
+
+found 0 vulnerabilities
+[extensions/emmet] Installing dependencies...
+[extensions/emmet] $ npm ci
+
+added 19 packages, and audited 20 packages in 7s
+
+found 0 vulnerabilities
+[extensions/extension-editing] Installing dependencies...
+[extensions/extension-editing] $ npm ci
+
+added 12 packages, and audited 13 packages in 473ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[extensions/git] Installing dependencies...
+[extensions/git] $ npm ci
+
+added 35 packages, and audited 36 packages in 628ms
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[extensions/git-base] Installing dependencies...
+[extensions/git-base] $ npm ci
+
+added 2 packages, and audited 3 packages in 466ms
+
+found 0 vulnerabilities
+[extensions/github] Installing dependencies...
+[extensions/github] $ npm ci
+
+added 42 packages, and audited 43 packages in 791ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[extensions/github-authentication] Installing dependencies...
+[extensions/github-authentication] $ npm ci
+
+added 27 packages, and audited 28 packages in 696ms
+
+1 critical severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[extensions/grunt] Installing dependencies...
+[extensions/grunt] $ npm ci
+
+added 2 packages, and audited 3 packages in 473ms
+
+found 0 vulnerabilities
+[extensions/gulp] Installing dependencies...
+[extensions/gulp] $ npm ci
+
+added 2 packages, and audited 3 packages in 482ms
+
+found 0 vulnerabilities
+[extensions/html-language-features] Installing dependencies...
+[extensions/html-language-features] $ npm ci
+
+added 22 packages, and audited 23 packages in 785ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+1 low severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[extensions/html-language-features/server] Installing dependencies...
+[extensions/html-language-features/server] $ npm ci
+
+added 13 packages, and audited 14 packages in 762ms
+
+found 0 vulnerabilities
+[extensions/ipynb] Installing dependencies...
+[extensions/ipynb] $ npm ci
+
+added 7 packages, and audited 8 packages in 743ms
+
+found 0 vulnerabilities
+[extensions/jake] Installing dependencies...
+[extensions/jake] $ npm ci
+
+added 2 packages, and audited 3 packages in 573ms
+
+found 0 vulnerabilities
+[extensions/json-language-features] Installing dependencies...
+[extensions/json-language-features] $ npm ci
+
+added 22 packages, and audited 23 packages in 626ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+1 low severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[extensions/json-language-features/server] Installing dependencies...
+[extensions/json-language-features/server] $ npm ci
+
+added 14 packages, and audited 15 packages in 588ms
+
+found 0 vulnerabilities
+[extensions/markdown-language-features] Installing dependencies...
+[extensions/markdown-language-features] $ npm ci
+
+added 72 packages, and audited 73 packages in 770ms
+
+11 packages are looking for funding
+  run `npm fund` for details
+
+1 low severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[extensions/markdown-math] Installing dependencies...
+[extensions/markdown-math] $ npm ci
+
+added 5 packages, and audited 6 packages in 943ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[extensions/media-preview] Installing dependencies...
+[extensions/media-preview] $ npm ci
+
+added 12 packages, and audited 13 packages in 588ms
+
+found 0 vulnerabilities
+[extensions/merge-conflict] Installing dependencies...
+[extensions/merge-conflict] $ npm ci
+
+added 13 packages, and audited 14 packages in 689ms
+
+found 0 vulnerabilities
+[extensions/microsoft-authentication] Installing dependencies...
+[extensions/microsoft-authentication] $ npm ci
+
+added 47 packages, and audited 50 packages in 719ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+1 critical severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[extensions/notebook-renderers] Installing dependencies...
+[extensions/notebook-renderers] $ npm ci
+npm warn deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+npm warn deprecated domexception@4.0.0: Use your platform's native DOMException instead
+
+added 63 packages, and audited 64 packages in 942ms
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+1 critical severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[extensions/npm] Installing dependencies...
+[extensions/npm] $ npm ci
+
+added 34 packages, and audited 35 packages in 826ms
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+1 low severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[extensions/php-language-features] Installing dependencies...
+[extensions/php-language-features] $ npm ci
+
+added 5 packages, and audited 6 packages in 738ms
+
+found 0 vulnerabilities
+[extensions/references-view] Installing dependencies...
+[extensions/references-view] $ npm ci
+
+added 2 packages, and audited 3 packages in 754ms
+
+found 0 vulnerabilities
+[extensions/search-result] Installing dependencies...
+[extensions/search-result] $ npm ci
+
+up to date, audited 1 package in 100ms
+
+found 0 vulnerabilities
+[extensions/simple-browser] Installing dependencies...
+[extensions/simple-browser] $ npm ci
+
+added 13 packages, and audited 14 packages in 621ms
+
+found 0 vulnerabilities
+[extensions/tunnel-forwarding] Installing dependencies...
+[extensions/tunnel-forwarding] $ npm ci
+
+added 2 packages, and audited 3 packages in 816ms
+
+found 0 vulnerabilities
+[extensions/typescript-language-features] Installing dependencies...
+[extensions/typescript-language-features] $ npm ci
+
+added 25 packages, and audited 26 packages in 796ms
+
+found 0 vulnerabilities
+[extensions/vscode-api-tests] Installing dependencies...
+[extensions/vscode-api-tests] $ npm ci
+
+added 24 packages, and audited 25 packages in 466ms
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[extensions/vscode-colorize-tests] Installing dependencies...
+[extensions/vscode-colorize-tests] $ npm ci
+
+added 3 packages, and audited 4 packages in 749ms
+
+found 0 vulnerabilities
+[extensions/vscode-colorize-perf-tests] Installing dependencies...
+[extensions/vscode-colorize-perf-tests] $ npm ci
+
+added 3 packages, and audited 4 packages in 558ms
+
+found 0 vulnerabilities
+[extensions/vscode-test-resolver] Installing dependencies...
+[extensions/vscode-test-resolver] $ npm ci
+
+added 2 packages, and audited 3 packages in 581ms
+
+found 0 vulnerabilities
+[remote] Installing dependencies...
+[remote] $ npm ci
+
+added 118 packages, and audited 119 packages in 10s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[remote] Removed @parcel/watcher prebuilt module /Users/konstantin/Projects/vscodium-builds/vscode/remote/node_modules/@parcel/watcher-darwin-arm64
+[remote/web] Installing dependencies...
+[remote/web] $ npm ci
+
+added 30 packages, and audited 31 packages in 783ms
+
+found 0 vulnerabilities
+[test/automation] Installing dependencies...
+[test/automation] $ npm ci
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.0: Glob versions prior to v9 are no longer supported
+
+added 116 packages, and audited 117 packages in 1s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+4 vulnerabilities (1 low, 2 moderate, 1 high)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[test/integration/browser] Installing dependencies...
+[test/integration/browser] $ npm ci
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.1.6: Glob versions prior to v9 are no longer supported
+
+added 23 packages, and audited 24 packages in 498ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+1 low severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[test/monaco] Installing dependencies...
+[test/monaco] $ npm ci
+
+added 9 packages, and audited 10 packages in 2s
+
+1 high severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[test/smoke] Installing dependencies...
+[test/smoke] $ npm ci
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.1.6: Glob versions prior to v9 are no longer supported
+
+added 90 packages, and audited 91 packages in 879ms
+
+19 packages are looking for funding
+  run `npm fund` for details
+
+2 vulnerabilities (1 high, 1 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+[.vscode/extensions/vscode-selfhost-import-aid] Installing dependencies...
+[.vscode/extensions/vscode-selfhost-import-aid] $ npm ci
+
+added 1 package, and audited 2 packages in 781ms
+
+found 0 vulnerabilities
+[.vscode/extensions/vscode-selfhost-test-provider] Installing dependencies...
+[.vscode/extensions/vscode-selfhost-test-provider] $ npm ci
+
+added 10 packages, and audited 11 packages in 499ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+added 1544 packages, and audited 1545 packages in 1m
+
+186 packages are looking for funding
+  run `npm fund` for details
+
+30 vulnerabilities (6 low, 16 moderate, 7 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
++++ break
++++ mv .npmrc.bak .npmrc
++++ cp product.json product.json.bak
++++ setpath product checksumFailMoreInfoUrl 'https://go.microsoft.com/fwlink/?LinkId=828886'
++++ local jsonTmp
++++ setpath product documentationUrl 'https://go.microsoft.com/fwlink/?LinkID=533484#vscode'
++++ local jsonTmp
++++ setpath_json product extensionsGallery '{"serviceUrl": "https://open-vsx.org/vscode/gallery", "itemUrl": "https://open-vsx.org/vscode/item", "extensionUrlTemplate": "https://open-vsx.org/vscode/gallery/{publisher}/{name}/latest", "controlUrl": "https://raw.githubusercontent.com/EclipseFdn/publish-extensions/refs/heads/master/extension-control/extensions.json"}'
++++ local jsonTmp
++++ setpath product introductoryVideosUrl 'https://go.microsoft.com/fwlink/?linkid=832146'
++++ local jsonTmp
++++ setpath product keyboardShortcutsUrlLinux 'https://go.microsoft.com/fwlink/?linkid=832144'
++++ local jsonTmp
++++ setpath product keyboardShortcutsUrlMac 'https://go.microsoft.com/fwlink/?linkid=832143'
++++ local jsonTmp
++++ setpath product keyboardShortcutsUrlWin 'https://go.microsoft.com/fwlink/?linkid=832145'
++++ local jsonTmp
++++ setpath product licenseUrl https://github.com/Neira/neira/blob/master/LICENSE
++++ local jsonTmp
++++ setpath_json product linkProtectionTrustedDomains '["https://open-vsx.org"]'
++++ local jsonTmp
++++ setpath product releaseNotesUrl 'https://go.microsoft.com/fwlink/?LinkID=533483#vscode'
++++ local jsonTmp
++++ setpath product reportIssueUrl https://github.com/Neira/neira/issues/new
++++ local jsonTmp
++++ setpath product requestFeatureUrl 'https://go.microsoft.com/fwlink/?LinkID=533482'
++++ local jsonTmp
++++ setpath product tipsAndTricksUrl 'https://go.microsoft.com/fwlink/?linkid=852118'
++++ local jsonTmp
++++ setpath product twitterUrl 'https://go.microsoft.com/fwlink/?LinkID=533687'
++++ local jsonTmp
++++ [[ '' != \y\e\s ]]
++++ setpath product updateUrl https://raw.githubusercontent.com/Neira/versions/refs/heads/master
++++ local jsonTmp
++++ [[ stable == \i\n\s\i\d\e\r ]]
++++ setpath product downloadUrl https://github.com/Neira/neira/releases
++++ local jsonTmp
++++ [[ stable == \i\n\s\i\d\e\r ]]
++++ setpath product nameShort Neira
++++ local jsonTmp
++++ setpath product nameLong Neira
++++ local jsonTmp
++++ setpath product applicationName neira
++++ local jsonTmp
++++ setpath product linuxIconName neira
++++ local jsonTmp
++++ setpath product quality stable
++++ local jsonTmp
++++ setpath product urlProtocol neira
++++ local jsonTmp
++++ setpath product serverApplicationName neira-server
++++ local jsonTmp
++++ setpath product serverDataFolderName .neira-server
++++ local jsonTmp
++++ setpath product darwinBundleIdentifier com.neira
++++ local jsonTmp
++++ setpath product win32AppUserModelId Neira.Neira
++++ local jsonTmp
++++ setpath product win32DirName Neira
++++ local jsonTmp
++++ setpath product win32MutexName neira
++++ local jsonTmp
++++ setpath product win32NameVersion Neira
++++ local jsonTmp
++++ setpath product win32RegValueName Neira
++++ local jsonTmp
++++ setpath product win32ShellNameShort Neira
++++ local jsonTmp
++++ setpath product win32AppId '{{763CBF88-25C6-4B10-952F-326AE657F16B}'
++++ local jsonTmp
++++ setpath product win32x64AppId '{{88DA3577-054F-4CA1-8122-7D820494CFFB}'
++++ local jsonTmp
++++ setpath product win32arm64AppId '{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}'
++++ local jsonTmp
++++ setpath product win32UserAppId '{{0FD05EB4-651E-4E78-A062-515204B47A3A}'
++++ local jsonTmp
++++ setpath product win32x64UserAppId '{{2E1F05D1-C245-4562-81EE-28188DB6FD17}'
++++ local jsonTmp
++++ setpath product win32arm64UserAppId '{{57FD70A5-1B8D-4875-9F40-C5553F094828}'
++++ local jsonTmp
++++ setpath product tunnelApplicationName neira-tunnel
++++ local jsonTmp
++++ setpath product win32TunnelServiceMutex neira-tunnelservice
++++ local jsonTmp
++++ setpath product win32TunnelMutex neira-tunnel
++++ local jsonTmp
++++ setpath product configurationDefaults.workbench.appearance.locale ru
++++ local jsonTmp
+++++ jq -s '.[0] * .[1]' product.json ../product.json
++++ jsonTmp='{
+  "nameShort": "Neira",
+  "nameLong": "Neira",
+  "applicationName": "neira",
+  "dataFolderName": ".vscode-oss",
+  "win32MutexName": "neira",
+  "licenseName": "MIT",
+  "licenseUrl": "https://github.com/Neira/neira/blob/master/LICENSE",
+  "serverLicenseUrl": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
+  "serverGreeting": [],
+  "serverLicense": [],
+  "serverLicensePrompt": "",
+  "serverApplicationName": "neira-server",
+  "serverDataFolderName": ".neira-server",
+  "tunnelApplicationName": "neira-tunnel",
+  "win32DirName": "Neira",
+  "win32NameVersion": "Neira",
+  "win32RegValueName": "Neira",
+  "win32x64AppId": "{{88DA3577-054F-4CA1-8122-7D820494CFFB}",
+  "win32arm64AppId": "{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}",
+  "win32x64UserAppId": "{{2E1F05D1-C245-4562-81EE-28188DB6FD17}",
+  "win32arm64UserAppId": "{{57FD70A5-1B8D-4875-9F40-C5553F094828}",
+  "win32AppUserModelId": "Neira.Neira",
+  "win32ShellNameShort": "Neira",
+  "win32TunnelServiceMutex": "neira-tunnelservice",
+  "win32TunnelMutex": "neira-tunnel",
+  "darwinBundleIdentifier": "com.neira",
+  "darwinProfileUUID": "47827DD9-4734-49A0-AF80-7E19B11495CC",
+  "darwinProfilePayloadUUID": "CF808BE7-53F3-46C6-A7E2-7EDB98A5E959",
+  "linuxIconName": "neira",
+  "licenseFileName": "LICENSE.txt",
+  "reportIssueUrl": "https://github.com/Neira/neira/issues/new",
+  "nodejsRepository": "https://nodejs.org",
+  "urlProtocol": "neira",
+  "webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
+  "builtInExtensions": [
+    {
+      "name": "ms-vscode.js-debug-companion",
+      "version": "1.1.3",
+      "sha256": "7380a890787452f14b2db7835dfa94de538caf358ebc263f9d46dd68ac52de93",
+      "repo": "https://github.com/microsoft/vscode-js-debug-companion",
+      "metadata": {
+        "id": "99cb0b7f-7354-4278-b8da-6cc79972169d",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    },
+    {
+      "name": "ms-vscode.js-debug",
+      "version": "1.102.0",
+      "sha256": "0e8ed27ba2d707bcfb008e89e490c2d287d9537d84893b0792a4ee418274fa0b",
+      "repo": "https://github.com/microsoft/vscode-js-debug",
+      "metadata": {
+        "id": "25629058-ddac-4e17-abba-74678e126c5d",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    },
+    {
+      "name": "ms-vscode.vscode-js-profile-table",
+      "version": "1.0.10",
+      "sha256": "7361748ddf9fd09d8a2ed1f2a2d7376a2cf9aae708692820b799708385c38e08",
+      "repo": "https://github.com/microsoft/vscode-js-profile-visualizer",
+      "metadata": {
+        "id": "7e52b41b-71ad-457b-ab7e-0620f1fc4feb",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    }
+  ],
+  "checksumFailMoreInfoUrl": "https://go.microsoft.com/fwlink/?LinkId=828886",
+  "documentationUrl": "https://go.microsoft.com/fwlink/?LinkID=533484#vscode",
+  "extensionsGallery": {
+    "serviceUrl": "https://open-vsx.org/vscode/gallery",
+    "itemUrl": "https://open-vsx.org/vscode/item",
+    "extensionUrlTemplate": "https://open-vsx.org/vscode/gallery/{publisher}/{name}/latest",
+    "controlUrl": "https://raw.githubusercontent.com/EclipseFdn/publish-extensions/refs/heads/master/extension-control/extensions.json"
+  },
+  "introductoryVideosUrl": "https://go.microsoft.com/fwlink/?linkid=832146",
+  "keyboardShortcutsUrlLinux": "https://go.microsoft.com/fwlink/?linkid=832144",
+  "keyboardShortcutsUrlMac": "https://go.microsoft.com/fwlink/?linkid=832143",
+  "keyboardShortcutsUrlWin": "https://go.microsoft.com/fwlink/?linkid=832145",
+  "linkProtectionTrustedDomains": [
+    "https://open-vsx.org"
+  ],
+  "releaseNotesUrl": "https://go.microsoft.com/fwlink/?LinkID=533483#vscode",
+  "requestFeatureUrl": "https://go.microsoft.com/fwlink/?LinkID=533482",
+  "tipsAndTricksUrl": "https://go.microsoft.com/fwlink/?linkid=852118",
+  "twitterUrl": "https://go.microsoft.com/fwlink/?LinkID=533687",
+  "updateUrl": "https://raw.githubusercontent.com/Neira/versions/refs/heads/master",
+  "downloadUrl": "https://github.com/Neira/neira/releases",
+  "quality": "stable",
+  "win32AppId": "{{763CBF88-25C6-4B10-952F-326AE657F16B}",
+  "win32UserAppId": "{{0FD05EB4-651E-4E78-A062-515204B47A3A}",
+  "configurationDefaults.workbench.appearance.locale": "ru",
+  "configurationDefaults": {
+    "workbench.appearance.locale": "ru"
+  },
+  "extensionAllowedBadgeProviders": [
+    "api.bintray.com",
+    "api.travis-ci.com",
+    "api.travis-ci.org",
+    "app.fossa.io",
+    "badge.buildkite.com",
+    "badge.fury.io",
+    "badge.waffle.io",
+    "badgen.net",
+    "badges.frapsoft.com",
+    "badges.gitter.im",
+    "badges.greenkeeper.io",
+    "cdn.travis-ci.com",
+    "cdn.travis-ci.org",
+    "ci.appveyor.com",
+    "circleci.com",
+    "cla.opensource.microsoft.com",
+    "codacy.com",
+    "codeclimate.com",
+    "codecov.io",
+    "coveralls.io",
+    "david-dm.org",
+    "deepscan.io",
+    "dev.azure.com",
+    "docs.rs",
+    "flat.badgen.net",
+    "gemnasium.com",
+    "githost.io",
+    "gitlab.com",
+    "godoc.org",
+    "goreportcard.com",
+    "img.shields.io",
+    "isitmaintained.com",
+    "marketplace.visualstudio.com",
+    "nodesecurity.io",
+    "opencollective.com",
+    "snyk.io",
+    "travis-ci.com",
+    "travis-ci.org",
+    "visualstudio.com",
+    "vsmarketplacebadge.apphb.com",
+    "www.bithound.io",
+    "www.versioneye.com"
+  ],
+  "extensionAllowedBadgeProvidersRegex": [
+    "^https:\\/\\/github\\.com\\/[^/]+\\/[^/]+\\/(actions\\/)?workflows\\/.*badge\\.svg"
+  ],
+  "extensionEnabledApiProposals": {
+    "ms-azuretools.vscode-dev-azurecloudshell": [
+      "contribEditSessions"
+    ],
+    "ms-vscode.vscode-selfhost-test-provider": [
+      "testObserver",
+      "testRelatedCode"
+    ],
+    "VisualStudioExptTeam.vscodeintellicode-completions": [
+      "inlineCompletionsAdditions"
+    ],
+    "ms-vsliveshare.vsliveshare": [
+      "contribMenuBarHome",
+      "contribShareMenu",
+      "contribStatusBarItems",
+      "diffCommand",
+      "documentFiltersExclusive",
+      "fileSearchProvider",
+      "findTextInFiles",
+      "notebookCellExecutionState",
+      "notebookLiveShare",
+      "terminalDimensions",
+      "terminalDataWriteEvent",
+      "textSearchProvider"
+    ],
+    "ms-vscode.js-debug": [
+      "portsAttributes",
+      "findTextInFiles",
+      "workspaceTrust",
+      "tunnels"
+    ],
+    "ms-toolsai.vscode-ai-remote": [
+      "resolvers"
+    ],
+    "ms-python.python": [
+      "codeActionAI",
+      "contribEditorContentMenu",
+      "quickPickSortByLabel",
+      "portsAttributes",
+      "testObserver",
+      "quickPickItemTooltip",
+      "terminalDataWriteEvent",
+      "terminalExecuteCommandEvent",
+      "notebookReplDocument",
+      "notebookVariableProvider",
+      "terminalShellEnv"
+    ],
+    "ms-python.vscode-python-envs": [
+      "terminalShellEnv"
+    ],
+    "ms-dotnettools.dotnet-interactive-vscode": [
+      "notebookMessaging"
+    ],
+    "GitHub.codespaces": [
+      "contribEditSessions",
+      "contribMenuBarHome",
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "resolvers",
+      "tunnels",
+      "terminalDataWriteEvent",
+      "treeViewReveal",
+      "notebookKernelSource"
+    ],
+    "ms-vscode.azure-repos": [
+      "extensionRuntime",
+      "fileSearchProvider",
+      "textSearchProvider"
+    ],
+    "ms-vscode.remote-repositories": [
+      "canonicalUriProvider",
+      "contribEditSessions",
+      "contribRemoteHelp",
+      "contribMenuBarHome",
+      "contribViewsRemote",
+      "contribViewsWelcome",
+      "contribShareMenu",
+      "documentFiltersExclusive",
+      "editSessionIdentityProvider",
+      "extensionRuntime",
+      "fileSearchProvider",
+      "quickPickSortByLabel",
+      "workspaceTrust",
+      "shareProvider",
+      "scmActionButton",
+      "scmSelectedProvider",
+      "scmValidation",
+      "textSearchProvider",
+      "timeline"
+    ],
+    "ms-vscode-remote.remote-wsl": [
+      "resolvers",
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "telemetry"
+    ],
+    "ms-vscode-remote.remote-ssh": [
+      "resolvers",
+      "tunnels",
+      "terminalDataWriteEvent",
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "telemetry"
+    ],
+    "ms-vscode.remote-server": [
+      "resolvers",
+      "tunnels",
+      "contribViewsWelcome"
+    ],
+    "ms-vscode.remote-explorer": [
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "extensionsAny"
+    ],
+    "ms-vscode-remote.remote-containers": [
+      "contribEditSessions",
+      "resolvers",
+      "portsAttributes",
+      "tunnels",
+      "workspaceTrust",
+      "terminalDimensions",
+      "contribRemoteHelp",
+      "contribViewsRemote"
+    ],
+    "ms-vscode.js-debug-nightly": [
+      "portsAttributes",
+      "findTextInFiles",
+      "workspaceTrust",
+      "tunnels"
+    ],
+    "ms-vscode.lsif-browser": [
+      "documentFiltersExclusive"
+    ],
+    "ms-vscode.vscode-speech": [
+      "speech"
+    ],
+    "GitHub.vscode-pull-request-github": [
+      "activeComment",
+      "chatParticipantAdditions",
+      "chatParticipantPrivate",
+      "codiconDecoration",
+      "codeActionRanges",
+      "commentingRangeHint",
+      "commentReactor",
+      "commentReveal",
+      "commentThreadApplicability",
+      "contribAccessibilityHelpContent",
+      "contribCommentEditorActionsMenu",
+      "contribCommentPeekContext",
+      "contribCommentThreadAdditionalMenu",
+      "contribCommentsViewThreadMenus",
+      "contribEditorContentMenu",
+      "contribMultiDiffEditorMenus",
+      "contribShareMenu",
+      "diffCommand",
+      "quickDiffProvider",
+      "remoteCodingAgents",
+      "shareProvider",
+      "tabInputTextMerge",
+      "tokenInformation",
+      "treeViewMarkdownMessage"
+    ],
+    "GitHub.copilot": [
+      "inlineCompletionsAdditions"
+    ],
+    "GitHub.copilot-nightly": [
+      "inlineCompletionsAdditions"
+    ],
+    "GitHub.copilot-chat": [
+      "interactive",
+      "terminalDataWriteEvent",
+      "terminalExecuteCommandEvent",
+      "terminalSelection",
+      "terminalQuickFixProvider",
+      "chatParticipantAdditions",
+      "defaultChatParticipant",
+      "embeddings",
+      "chatEditing",
+      "chatProvider",
+      "mappedEditsProvider",
+      "aiRelatedInformation",
+      "aiSettingsSearch",
+      "codeActionAI",
+      "findTextInFiles",
+      "findTextInFiles2",
+      "textSearchProvider",
+      "textSearchProvider2",
+      "activeComment",
+      "commentReveal",
+      "contribSourceControlInputBoxMenu",
+      "contribCommentEditorActionsMenu",
+      "contribCommentThreadAdditionalMenu",
+      "contribCommentsViewThreadMenus",
+      "newSymbolNamesProvider",
+      "findFiles2",
+      "chatReferenceDiagnostic",
+      "extensionsAny",
+      "authLearnMore",
+      "testObserver",
+      "aiTextSearchProvider",
+      "documentFiltersExclusive",
+      "chatParticipantPrivate",
+      "contribDebugCreateConfiguration",
+      "inlineCompletionsAdditions",
+      "chatReferenceBinaryData",
+      "languageModelSystem",
+      "languageModelCapabilities",
+      "languageModelDataPart",
+      "chatStatusItem",
+      "taskProblemMatcherStatus",
+      "contribLanguageModelToolSets",
+      "textDocumentChangeReason",
+      "resolvers"
+    ],
+    "GitHub.remotehub": [
+      "contribRemoteHelp",
+      "contribMenuBarHome",
+      "contribViewsRemote",
+      "contribViewsWelcome",
+      "documentFiltersExclusive",
+      "extensionRuntime",
+      "fileSearchProvider",
+      "quickPickSortByLabel",
+      "workspaceTrust",
+      "scmSelectedProvider",
+      "scmValidation",
+      "textSearchProvider",
+      "timeline"
+    ],
+    "ms-python.gather": [
+      "notebookCellExecutionState"
+    ],
+    "ms-python.vscode-pylance": [
+      "mcpConfigurationProvider",
+      "terminalShellEnv"
+    ],
+    "ms-python.debugpy": [
+      "contribViewsWelcome",
+      "debugVisualization",
+      "portsAttributes"
+    ],
+    "ms-toolsai.jupyter-renderers": [
+      "contribNotebookStaticPreloads"
+    ],
+    "ms-toolsai.jupyter": [
+      "notebookDeprecated",
+      "notebookMessaging",
+      "notebookMime",
+      "portsAttributes",
+      "quickPickSortByLabel",
+      "notebookKernelSource",
+      "interactiveWindow",
+      "notebookControllerAffinityHidden",
+      "contribNotebookStaticPreloads",
+      "quickPickItemTooltip",
+      "notebookExecution",
+      "notebookCellExecution",
+      "notebookVariableProvider",
+      "notebookReplDocument"
+    ],
+    "donjayamanne.kusto": [
+      "notebookVariableProvider"
+    ],
+    "ms-toolsai.tensorboard": [
+      "portsAttributes"
+    ],
+    "dbaeumer.vscode-eslint": [],
+    "ms-vscode.azure-sphere-tools-ui": [
+      "tunnels"
+    ],
+    "ms-azuretools.vscode-azureappservice": [
+      "terminalDataWriteEvent"
+    ],
+    "ms-vscode.anycode": [
+      "extensionsAny"
+    ],
+    "ms-vscode.cpptools": [
+      "terminalDataWriteEvent",
+      "chatParticipantAdditions"
+    ],
+    "vscjava.vscode-java-pack": [],
+    "ms-dotnettools.csdevkit": [
+      "inlineCompletionsAdditions"
+    ],
+    "ms-dotnettools.vscodeintellicode-csharp": [
+      "inlineCompletionsAdditions"
+    ],
+    "microsoft-IsvExpTools.powerplatform-vscode": [
+      "fileSearchProvider",
+      "textSearchProvider"
+    ],
+    "microsoft-IsvExpTools.powerplatform-vscode-preview": [
+      "fileSearchProvider",
+      "textSearchProvider"
+    ],
+    "TeamsDevApp.ms-teams-vscode-extension": [
+      "chatParticipantAdditions",
+      "languageModelSystem"
+    ],
+    "ms-toolsai.datawrangler": [],
+    "ms-vscode.vscode-commander": [],
+    "ms-vscode.vscode-websearchforcopilot": [],
+    "ms-vscode.vscode-copilot-vision": [
+      "chatReferenceBinaryData",
+      "codeActionAI"
+    ],
+    "ms-autodev.vscode-autodev": [
+      "chatParticipantAdditions"
+    ],
+    "vscjava.vscode-java-upgrade": [
+      "chatParticipantAdditions"
+    ],
+    "jeanp413.open-remote-ssh": [
+      "resolvers",
+      "tunnels",
+      "terminalDataWriteEvent",
+      "contribRemoteHelp",
+      "contribViewsRemote"
+    ],
+    "jeanp413.open-remote-wsl": [
+      "resolvers",
+      "contribRemoteHelp",
+      "contribViewsRemote"
+    ]
+  },
+  "extensionKind": {
+    "Shan.code-settings-sync": [
+      "ui"
+    ],
+    "shalldie.background": [
+      "ui"
+    ],
+    "techer.open-in-browser": [
+      "ui"
+    ],
+    "CoenraadS.bracket-pair-colorizer-2": [
+      "ui"
+    ],
+    "CoenraadS.bracket-pair-colorizer": [
+      "ui",
+      "workspace"
+    ],
+    "hiro-sun.vscode-emacs": [
+      "ui",
+      "workspace"
+    ],
+    "hnw.vscode-auto-open-markdown-preview": [
+      "ui",
+      "workspace"
+    ],
+    "wayou.vscode-todo-highlight": [
+      "ui",
+      "workspace"
+    ],
+    "aaron-bond.better-comments": [
+      "ui",
+      "workspace"
+    ],
+    "vscodevim.vim": [
+      "ui"
+    ],
+    "ollyhayes.colmak-vim": [
+      "ui"
+    ]
+  },
+  "extensionPointExtensionKind": {
+    "typescriptServerPlugins": [
+      "workspace"
+    ]
+  },
+  "extensionSyncedKeys": {
+    "ritwickdey.liveserver": [
+      "liveServer.setup.version"
+    ]
+  },
+  "extensionVirtualWorkspacesSupport": {
+    "esbenp.prettier-vscode": {
+      "default": false
+    },
+    "msjsdiag.debugger-for-chrome": {
+      "default": false
+    },
+    "redhat.java": {
+      "default": false
+    },
+    "HookyQR.beautify": {
+      "default": false
+    },
+    "ritwickdey.LiveServer": {
+      "default": false
+    },
+    "VisualStudioExptTeam.vscodeintellicode": {
+      "default": false
+    },
+    "octref.vetur": {
+      "default": false
+    },
+    "formulahendry.code-runner": {
+      "default": false
+    },
+    "xdebug.php-debug": {
+      "default": false
+    },
+    "ms-mssql.mssql": {
+      "default": false
+    },
+    "christian-kohler.path-intellisense": {
+      "default": false
+    },
+    "eg2.tslint": {
+      "default": false
+    },
+    "eg2.vscode-npm-script": {
+      "default": false
+    },
+    "donjayamanne.githistory": {
+      "default": false
+    },
+    "Zignd.html-css-class-completion": {
+      "default": false
+    },
+    "christian-kohler.npm-intellisense": {
+      "default": false
+    },
+    "EditorConfig.EditorConfig": {
+      "default": false
+    },
+    "austin.code-gnu-global": {
+      "default": false
+    },
+    "johnpapa.Angular2": {
+      "default": false
+    },
+    "ms-vscode.vscode-typescript-tslint-plugin": {
+      "default": false
+    },
+    "DotJoshJohnson.xml": {
+      "default": false
+    },
+    "techer.open-in-browser": {
+      "default": false
+    },
+    "tht13.python": {
+      "default": false
+    },
+    "bmewburn.vscode-intelephense-client": {
+      "default": false
+    },
+    "Angular.ng-template": {
+      "default": false
+    },
+    "xdebug.php-pack": {
+      "default": false
+    },
+    "dbaeumer.jshint": {
+      "default": false
+    },
+    "yzhang.markdown-all-in-one": {
+      "default": false
+    },
+    "Dart-Code.flutter": {
+      "default": false
+    },
+    "streetsidesoftware.code-spell-checker": {
+      "default": false
+    },
+    "rebornix.Ruby": {
+      "default": false
+    },
+    "ms-vscode.sublime-keybindings": {
+      "default": false
+    },
+    "mitaki28.vscode-clang": {
+      "default": false
+    },
+    "steoates.autoimport": {
+      "default": false
+    },
+    "donjayamanne.python-extension-pack": {
+      "default": false
+    },
+    "shd101wyy.markdown-preview-enhanced": {
+      "default": false
+    },
+    "mikestead.dotenv": {
+      "default": false
+    },
+    "pranaygp.vscode-css-peek": {
+      "default": false
+    },
+    "ikappas.phpcs": {
+      "default": false
+    },
+    "platformio.platformio-ide": {
+      "default": false
+    },
+    "jchannon.csharpextensions": {
+      "default": false
+    },
+    "gruntfuggly.todo-tree": {
+      "default": false
+    }
+  }
+}'
++++ echo '{
+  "nameShort": "Neira",
+  "nameLong": "Neira",
+  "applicationName": "neira",
+  "dataFolderName": ".vscode-oss",
+  "win32MutexName": "neira",
+  "licenseName": "MIT",
+  "licenseUrl": "https://github.com/Neira/neira/blob/master/LICENSE",
+  "serverLicenseUrl": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
+  "serverGreeting": [],
+  "serverLicense": [],
+  "serverLicensePrompt": "",
+  "serverApplicationName": "neira-server",
+  "serverDataFolderName": ".neira-server",
+  "tunnelApplicationName": "neira-tunnel",
+  "win32DirName": "Neira",
+  "win32NameVersion": "Neira",
+  "win32RegValueName": "Neira",
+  "win32x64AppId": "{{88DA3577-054F-4CA1-8122-7D820494CFFB}",
+  "win32arm64AppId": "{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}",
+  "win32x64UserAppId": "{{2E1F05D1-C245-4562-81EE-28188DB6FD17}",
+  "win32arm64UserAppId": "{{57FD70A5-1B8D-4875-9F40-C5553F094828}",
+  "win32AppUserModelId": "Neira.Neira",
+  "win32ShellNameShort": "Neira",
+  "win32TunnelServiceMutex": "neira-tunnelservice",
+  "win32TunnelMutex": "neira-tunnel",
+  "darwinBundleIdentifier": "com.neira",
+  "darwinProfileUUID": "47827DD9-4734-49A0-AF80-7E19B11495CC",
+  "darwinProfilePayloadUUID": "CF808BE7-53F3-46C6-A7E2-7EDB98A5E959",
+  "linuxIconName": "neira",
+  "licenseFileName": "LICENSE.txt",
+  "reportIssueUrl": "https://github.com/Neira/neira/issues/new",
+  "nodejsRepository": "https://nodejs.org",
+  "urlProtocol": "neira",
+  "webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
+  "builtInExtensions": [
+    {
+      "name": "ms-vscode.js-debug-companion",
+      "version": "1.1.3",
+      "sha256": "7380a890787452f14b2db7835dfa94de538caf358ebc263f9d46dd68ac52de93",
+      "repo": "https://github.com/microsoft/vscode-js-debug-companion",
+      "metadata": {
+        "id": "99cb0b7f-7354-4278-b8da-6cc79972169d",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    },
+    {
+      "name": "ms-vscode.js-debug",
+      "version": "1.102.0",
+      "sha256": "0e8ed27ba2d707bcfb008e89e490c2d287d9537d84893b0792a4ee418274fa0b",
+      "repo": "https://github.com/microsoft/vscode-js-debug",
+      "metadata": {
+        "id": "25629058-ddac-4e17-abba-74678e126c5d",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    },
+    {
+      "name": "ms-vscode.vscode-js-profile-table",
+      "version": "1.0.10",
+      "sha256": "7361748ddf9fd09d8a2ed1f2a2d7376a2cf9aae708692820b799708385c38e08",
+      "repo": "https://github.com/microsoft/vscode-js-profile-visualizer",
+      "metadata": {
+        "id": "7e52b41b-71ad-457b-ab7e-0620f1fc4feb",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    }
+  ],
+  "checksumFailMoreInfoUrl": "https://go.microsoft.com/fwlink/?LinkId=828886",
+  "documentationUrl": "https://go.microsoft.com/fwlink/?LinkID=533484#vscode",
+  "extensionsGallery": {
+    "serviceUrl": "https://open-vsx.org/vscode/gallery",
+    "itemUrl": "https://open-vsx.org/vscode/item",
+    "extensionUrlTemplate": "https://open-vsx.org/vscode/gallery/{publisher}/{name}/latest",
+    "controlUrl": "https://raw.githubusercontent.com/EclipseFdn/publish-extensions/refs/heads/master/extension-control/extensions.json"
+  },
+  "introductoryVideosUrl": "https://go.microsoft.com/fwlink/?linkid=832146",
+  "keyboardShortcutsUrlLinux": "https://go.microsoft.com/fwlink/?linkid=832144",
+  "keyboardShortcutsUrlMac": "https://go.microsoft.com/fwlink/?linkid=832143",
+  "keyboardShortcutsUrlWin": "https://go.microsoft.com/fwlink/?linkid=832145",
+  "linkProtectionTrustedDomains": [
+    "https://open-vsx.org"
+  ],
+  "releaseNotesUrl": "https://go.microsoft.com/fwlink/?LinkID=533483#vscode",
+  "requestFeatureUrl": "https://go.microsoft.com/fwlink/?LinkID=533482",
+  "tipsAndTricksUrl": "https://go.microsoft.com/fwlink/?linkid=852118",
+  "twitterUrl": "https://go.microsoft.com/fwlink/?LinkID=533687",
+  "updateUrl": "https://raw.githubusercontent.com/Neira/versions/refs/heads/master",
+  "downloadUrl": "https://github.com/Neira/neira/releases",
+  "quality": "stable",
+  "win32AppId": "{{763CBF88-25C6-4B10-952F-326AE657F16B}",
+  "win32UserAppId": "{{0FD05EB4-651E-4E78-A062-515204B47A3A}",
+  "configurationDefaults.workbench.appearance.locale": "ru",
+  "configurationDefaults": {
+    "workbench.appearance.locale": "ru"
+  },
+  "extensionAllowedBadgeProviders": [
+    "api.bintray.com",
+    "api.travis-ci.com",
+    "api.travis-ci.org",
+    "app.fossa.io",
+    "badge.buildkite.com",
+    "badge.fury.io",
+    "badge.waffle.io",
+    "badgen.net",
+    "badges.frapsoft.com",
+    "badges.gitter.im",
+    "badges.greenkeeper.io",
+    "cdn.travis-ci.com",
+    "cdn.travis-ci.org",
+    "ci.appveyor.com",
+    "circleci.com",
+    "cla.opensource.microsoft.com",
+    "codacy.com",
+    "codeclimate.com",
+    "codecov.io",
+    "coveralls.io",
+    "david-dm.org",
+    "deepscan.io",
+    "dev.azure.com",
+    "docs.rs",
+    "flat.badgen.net",
+    "gemnasium.com",
+    "githost.io",
+    "gitlab.com",
+    "godoc.org",
+    "goreportcard.com",
+    "img.shields.io",
+    "isitmaintained.com",
+    "marketplace.visualstudio.com",
+    "nodesecurity.io",
+    "opencollective.com",
+    "snyk.io",
+    "travis-ci.com",
+    "travis-ci.org",
+    "visualstudio.com",
+    "vsmarketplacebadge.apphb.com",
+    "www.bithound.io",
+    "www.versioneye.com"
+  ],
+  "extensionAllowedBadgeProvidersRegex": [
+    "^https:\\/\\/github\\.com\\/[^/]+\\/[^/]+\\/(actions\\/)?workflows\\/.*badge\\.svg"
+  ],
+  "extensionEnabledApiProposals": {
+    "ms-azuretools.vscode-dev-azurecloudshell": [
+      "contribEditSessions"
+    ],
+    "ms-vscode.vscode-selfhost-test-provider": [
+      "testObserver",
+      "testRelatedCode"
+    ],
+    "VisualStudioExptTeam.vscodeintellicode-completions": [
+      "inlineCompletionsAdditions"
+    ],
+    "ms-vsliveshare.vsliveshare": [
+      "contribMenuBarHome",
+      "contribShareMenu",
+      "contribStatusBarItems",
+      "diffCommand",
+      "documentFiltersExclusive",
+      "fileSearchProvider",
+      "findTextInFiles",
+      "notebookCellExecutionState",
+      "notebookLiveShare",
+      "terminalDimensions",
+      "terminalDataWriteEvent",
+      "textSearchProvider"
+    ],
+    "ms-vscode.js-debug": [
+      "portsAttributes",
+      "findTextInFiles",
+      "workspaceTrust",
+      "tunnels"
+    ],
+    "ms-toolsai.vscode-ai-remote": [
+      "resolvers"
+    ],
+    "ms-python.python": [
+      "codeActionAI",
+      "contribEditorContentMenu",
+      "quickPickSortByLabel",
+      "portsAttributes",
+      "testObserver",
+      "quickPickItemTooltip",
+      "terminalDataWriteEvent",
+      "terminalExecuteCommandEvent",
+      "notebookReplDocument",
+      "notebookVariableProvider",
+      "terminalShellEnv"
+    ],
+    "ms-python.vscode-python-envs": [
+      "terminalShellEnv"
+    ],
+    "ms-dotnettools.dotnet-interactive-vscode": [
+      "notebookMessaging"
+    ],
+    "GitHub.codespaces": [
+      "contribEditSessions",
+      "contribMenuBarHome",
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "resolvers",
+      "tunnels",
+      "terminalDataWriteEvent",
+      "treeViewReveal",
+      "notebookKernelSource"
+    ],
+    "ms-vscode.azure-repos": [
+      "extensionRuntime",
+      "fileSearchProvider",
+      "textSearchProvider"
+    ],
+    "ms-vscode.remote-repositories": [
+      "canonicalUriProvider",
+      "contribEditSessions",
+      "contribRemoteHelp",
+      "contribMenuBarHome",
+      "contribViewsRemote",
+      "contribViewsWelcome",
+      "contribShareMenu",
+      "documentFiltersExclusive",
+      "editSessionIdentityProvider",
+      "extensionRuntime",
+      "fileSearchProvider",
+      "quickPickSortByLabel",
+      "workspaceTrust",
+      "shareProvider",
+      "scmActionButton",
+      "scmSelectedProvider",
+      "scmValidation",
+      "textSearchProvider",
+      "timeline"
+    ],
+    "ms-vscode-remote.remote-wsl": [
+      "resolvers",
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "telemetry"
+    ],
+    "ms-vscode-remote.remote-ssh": [
+      "resolvers",
+      "tunnels",
+      "terminalDataWriteEvent",
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "telemetry"
+    ],
+    "ms-vscode.remote-server": [
+      "resolvers",
+      "tunnels",
+      "contribViewsWelcome"
+    ],
+    "ms-vscode.remote-explorer": [
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "extensionsAny"
+    ],
+    "ms-vscode-remote.remote-containers": [
+      "contribEditSessions",
+      "resolvers",
+      "portsAttributes",
+      "tunnels",
+      "workspaceTrust",
+      "terminalDimensions",
+      "contribRemoteHelp",
+      "contribViewsRemote"
+    ],
+    "ms-vscode.js-debug-nightly": [
+      "portsAttributes",
+      "findTextInFiles",
+      "workspaceTrust",
+      "tunnels"
+    ],
+    "ms-vscode.lsif-browser": [
+      "documentFiltersExclusive"
+    ],
+    "ms-vscode.vscode-speech": [
+      "speech"
+    ],
+    "GitHub.vscode-pull-request-github": [
+      "activeComment",
+      "chatParticipantAdditions",
+      "chatParticipantPrivate",
+      "codiconDecoration",
+      "codeActionRanges",
+      "commentingRangeHint",
+      "commentReactor",
+      "commentReveal",
+      "commentThreadApplicability",
+      "contribAccessibilityHelpContent",
+      "contribCommentEditorActionsMenu",
+      "contribCommentPeekContext",
+      "contribCommentThreadAdditionalMenu",
+      "contribCommentsViewThreadMenus",
+      "contribEditorContentMenu",
+      "contribMultiDiffEditorMenus",
+      "contribShareMenu",
+      "diffCommand",
+      "quickDiffProvider",
+      "remoteCodingAgents",
+      "shareProvider",
+      "tabInputTextMerge",
+      "tokenInformation",
+      "treeViewMarkdownMessage"
+    ],
+    "GitHub.copilot": [
+      "inlineCompletionsAdditions"
+    ],
+    "GitHub.copilot-nightly": [
+      "inlineCompletionsAdditions"
+    ],
+    "GitHub.copilot-chat": [
+      "interactive",
+      "terminalDataWriteEvent",
+      "terminalExecuteCommandEvent",
+      "terminalSelection",
+      "terminalQuickFixProvider",
+      "chatParticipantAdditions",
+      "defaultChatParticipant",
+      "embeddings",
+      "chatEditing",
+      "chatProvider",
+      "mappedEditsProvider",
+      "aiRelatedInformation",
+      "aiSettingsSearch",
+      "codeActionAI",
+      "findTextInFiles",
+      "findTextInFiles2",
+      "textSearchProvider",
+      "textSearchProvider2",
+      "activeComment",
+      "commentReveal",
+      "contribSourceControlInputBoxMenu",
+      "contribCommentEditorActionsMenu",
+      "contribCommentThreadAdditionalMenu",
+      "contribCommentsViewThreadMenus",
+      "newSymbolNamesProvider",
+      "findFiles2",
+      "chatReferenceDiagnostic",
+      "extensionsAny",
+      "authLearnMore",
+      "testObserver",
+      "aiTextSearchProvider",
+      "documentFiltersExclusive",
+      "chatParticipantPrivate",
+      "contribDebugCreateConfiguration",
+      "inlineCompletionsAdditions",
+      "chatReferenceBinaryData",
+      "languageModelSystem",
+      "languageModelCapabilities",
+      "languageModelDataPart",
+      "chatStatusItem",
+      "taskProblemMatcherStatus",
+      "contribLanguageModelToolSets",
+      "textDocumentChangeReason",
+      "resolvers"
+    ],
+    "GitHub.remotehub": [
+      "contribRemoteHelp",
+      "contribMenuBarHome",
+      "contribViewsRemote",
+      "contribViewsWelcome",
+      "documentFiltersExclusive",
+      "extensionRuntime",
+      "fileSearchProvider",
+      "quickPickSortByLabel",
+      "workspaceTrust",
+      "scmSelectedProvider",
+      "scmValidation",
+      "textSearchProvider",
+      "timeline"
+    ],
+    "ms-python.gather": [
+      "notebookCellExecutionState"
+    ],
+    "ms-python.vscode-pylance": [
+      "mcpConfigurationProvider",
+      "terminalShellEnv"
+    ],
+    "ms-python.debugpy": [
+      "contribViewsWelcome",
+      "debugVisualization",
+      "portsAttributes"
+    ],
+    "ms-toolsai.jupyter-renderers": [
+      "contribNotebookStaticPreloads"
+    ],
+    "ms-toolsai.jupyter": [
+      "notebookDeprecated",
+      "notebookMessaging",
+      "notebookMime",
+      "portsAttributes",
+      "quickPickSortByLabel",
+      "notebookKernelSource",
+      "interactiveWindow",
+      "notebookControllerAffinityHidden",
+      "contribNotebookStaticPreloads",
+      "quickPickItemTooltip",
+      "notebookExecution",
+      "notebookCellExecution",
+      "notebookVariableProvider",
+      "notebookReplDocument"
+    ],
+    "donjayamanne.kusto": [
+      "notebookVariableProvider"
+    ],
+    "ms-toolsai.tensorboard": [
+      "portsAttributes"
+    ],
+    "dbaeumer.vscode-eslint": [],
+    "ms-vscode.azure-sphere-tools-ui": [
+      "tunnels"
+    ],
+    "ms-azuretools.vscode-azureappservice": [
+      "terminalDataWriteEvent"
+    ],
+    "ms-vscode.anycode": [
+      "extensionsAny"
+    ],
+    "ms-vscode.cpptools": [
+      "terminalDataWriteEvent",
+      "chatParticipantAdditions"
+    ],
+    "vscjava.vscode-java-pack": [],
+    "ms-dotnettools.csdevkit": [
+      "inlineCompletionsAdditions"
+    ],
+    "ms-dotnettools.vscodeintellicode-csharp": [
+      "inlineCompletionsAdditions"
+    ],
+    "microsoft-IsvExpTools.powerplatform-vscode": [
+      "fileSearchProvider",
+      "textSearchProvider"
+    ],
+    "microsoft-IsvExpTools.powerplatform-vscode-preview": [
+      "fileSearchProvider",
+      "textSearchProvider"
+    ],
+    "TeamsDevApp.ms-teams-vscode-extension": [
+      "chatParticipantAdditions",
+      "languageModelSystem"
+    ],
+    "ms-toolsai.datawrangler": [],
+    "ms-vscode.vscode-commander": [],
+    "ms-vscode.vscode-websearchforcopilot": [],
+    "ms-vscode.vscode-copilot-vision": [
+      "chatReferenceBinaryData",
+      "codeActionAI"
+    ],
+    "ms-autodev.vscode-autodev": [
+      "chatParticipantAdditions"
+    ],
+    "vscjava.vscode-java-upgrade": [
+      "chatParticipantAdditions"
+    ],
+    "jeanp413.open-remote-ssh": [
+      "resolvers",
+      "tunnels",
+      "terminalDataWriteEvent",
+      "contribRemoteHelp",
+      "contribViewsRemote"
+    ],
+    "jeanp413.open-remote-wsl": [
+      "resolvers",
+      "contribRemoteHelp",
+      "contribViewsRemote"
+    ]
+  },
+  "extensionKind": {
+    "Shan.code-settings-sync": [
+      "ui"
+    ],
+    "shalldie.background": [
+      "ui"
+    ],
+    "techer.open-in-browser": [
+      "ui"
+    ],
+    "CoenraadS.bracket-pair-colorizer-2": [
+      "ui"
+    ],
+    "CoenraadS.bracket-pair-colorizer": [
+      "ui",
+      "workspace"
+    ],
+    "hiro-sun.vscode-emacs": [
+      "ui",
+      "workspace"
+    ],
+    "hnw.vscode-auto-open-markdown-preview": [
+      "ui",
+      "workspace"
+    ],
+    "wayou.vscode-todo-highlight": [
+      "ui",
+      "workspace"
+    ],
+    "aaron-bond.better-comments": [
+      "ui",
+      "workspace"
+    ],
+    "vscodevim.vim": [
+      "ui"
+    ],
+    "ollyhayes.colmak-vim": [
+      "ui"
+    ]
+  },
+  "extensionPointExtensionKind": {
+    "typescriptServerPlugins": [
+      "workspace"
+    ]
+  },
+  "extensionSyncedKeys": {
+    "ritwickdey.liveserver": [
+      "liveServer.setup.version"
+    ]
+  },
+  "extensionVirtualWorkspacesSupport": {
+    "esbenp.prettier-vscode": {
+      "default": false
+    },
+    "msjsdiag.debugger-for-chrome": {
+      "default": false
+    },
+    "redhat.java": {
+      "default": false
+    },
+    "HookyQR.beautify": {
+      "default": false
+    },
+    "ritwickdey.LiveServer": {
+      "default": false
+    },
+    "VisualStudioExptTeam.vscodeintellicode": {
+      "default": false
+    },
+    "octref.vetur": {
+      "default": false
+    },
+    "formulahendry.code-runner": {
+      "default": false
+    },
+    "xdebug.php-debug": {
+      "default": false
+    },
+    "ms-mssql.mssql": {
+      "default": false
+    },
+    "christian-kohler.path-intellisense": {
+      "default": false
+    },
+    "eg2.tslint": {
+      "default": false
+    },
+    "eg2.vscode-npm-script": {
+      "default": false
+    },
+    "donjayamanne.githistory": {
+      "default": false
+    },
+    "Zignd.html-css-class-completion": {
+      "default": false
+    },
+    "christian-kohler.npm-intellisense": {
+      "default": false
+    },
+    "EditorConfig.EditorConfig": {
+      "default": false
+    },
+    "austin.code-gnu-global": {
+      "default": false
+    },
+    "johnpapa.Angular2": {
+      "default": false
+    },
+    "ms-vscode.vscode-typescript-tslint-plugin": {
+      "default": false
+    },
+    "DotJoshJohnson.xml": {
+      "default": false
+    },
+    "techer.open-in-browser": {
+      "default": false
+    },
+    "tht13.python": {
+      "default": false
+    },
+    "bmewburn.vscode-intelephense-client": {
+      "default": false
+    },
+    "Angular.ng-template": {
+      "default": false
+    },
+    "xdebug.php-pack": {
+      "default": false
+    },
+    "dbaeumer.jshint": {
+      "default": false
+    },
+    "yzhang.markdown-all-in-one": {
+      "default": false
+    },
+    "Dart-Code.flutter": {
+      "default": false
+    },
+    "streetsidesoftware.code-spell-checker": {
+      "default": false
+    },
+    "rebornix.Ruby": {
+      "default": false
+    },
+    "ms-vscode.sublime-keybindings": {
+      "default": false
+    },
+    "mitaki28.vscode-clang": {
+      "default": false
+    },
+    "steoates.autoimport": {
+      "default": false
+    },
+    "donjayamanne.python-extension-pack": {
+      "default": false
+    },
+    "shd101wyy.markdown-preview-enhanced": {
+      "default": false
+    },
+    "mikestead.dotenv": {
+      "default": false
+    },
+    "pranaygp.vscode-css-peek": {
+      "default": false
+    },
+    "ikappas.phpcs": {
+      "default": false
+    },
+    "platformio.platformio-ide": {
+      "default": false
+    },
+    "jchannon.csharpextensions": {
+      "default": false
+    },
+    "gruntfuggly.todo-tree": {
+      "default": false
+    }
+  }
+}'
++++ unset jsonTmp
++++ cat product.json
+{
+  "nameShort": "Neira",
+  "nameLong": "Neira",
+  "applicationName": "neira",
+  "dataFolderName": ".vscode-oss",
+  "win32MutexName": "neira",
+  "licenseName": "MIT",
+  "licenseUrl": "https://github.com/Neira/neira/blob/master/LICENSE",
+  "serverLicenseUrl": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
+  "serverGreeting": [],
+  "serverLicense": [],
+  "serverLicensePrompt": "",
+  "serverApplicationName": "neira-server",
+  "serverDataFolderName": ".neira-server",
+  "tunnelApplicationName": "neira-tunnel",
+  "win32DirName": "Neira",
+  "win32NameVersion": "Neira",
+  "win32RegValueName": "Neira",
+  "win32x64AppId": "{{88DA3577-054F-4CA1-8122-7D820494CFFB}",
+  "win32arm64AppId": "{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}",
+  "win32x64UserAppId": "{{2E1F05D1-C245-4562-81EE-28188DB6FD17}",
+  "win32arm64UserAppId": "{{57FD70A5-1B8D-4875-9F40-C5553F094828}",
+  "win32AppUserModelId": "Neira.Neira",
+  "win32ShellNameShort": "Neira",
+  "win32TunnelServiceMutex": "neira-tunnelservice",
+  "win32TunnelMutex": "neira-tunnel",
+  "darwinBundleIdentifier": "com.neira",
+  "darwinProfileUUID": "47827DD9-4734-49A0-AF80-7E19B11495CC",
+  "darwinProfilePayloadUUID": "CF808BE7-53F3-46C6-A7E2-7EDB98A5E959",
+  "linuxIconName": "neira",
+  "licenseFileName": "LICENSE.txt",
+  "reportIssueUrl": "https://github.com/Neira/neira/issues/new",
+  "nodejsRepository": "https://nodejs.org",
+  "urlProtocol": "neira",
+  "webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
+  "builtInExtensions": [
+    {
+      "name": "ms-vscode.js-debug-companion",
+      "version": "1.1.3",
+      "sha256": "7380a890787452f14b2db7835dfa94de538caf358ebc263f9d46dd68ac52de93",
+      "repo": "https://github.com/microsoft/vscode-js-debug-companion",
+      "metadata": {
+        "id": "99cb0b7f-7354-4278-b8da-6cc79972169d",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    },
+    {
+      "name": "ms-vscode.js-debug",
+      "version": "1.102.0",
+      "sha256": "0e8ed27ba2d707bcfb008e89e490c2d287d9537d84893b0792a4ee418274fa0b",
+      "repo": "https://github.com/microsoft/vscode-js-debug",
+      "metadata": {
+        "id": "25629058-ddac-4e17-abba-74678e126c5d",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    },
+    {
+      "name": "ms-vscode.vscode-js-profile-table",
+      "version": "1.0.10",
+      "sha256": "7361748ddf9fd09d8a2ed1f2a2d7376a2cf9aae708692820b799708385c38e08",
+      "repo": "https://github.com/microsoft/vscode-js-profile-visualizer",
+      "metadata": {
+        "id": "7e52b41b-71ad-457b-ab7e-0620f1fc4feb",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    }
+  ],
+  "checksumFailMoreInfoUrl": "https://go.microsoft.com/fwlink/?LinkId=828886",
+  "documentationUrl": "https://go.microsoft.com/fwlink/?LinkID=533484#vscode",
+  "extensionsGallery": {
+    "serviceUrl": "https://open-vsx.org/vscode/gallery",
+    "itemUrl": "https://open-vsx.org/vscode/item",
+    "extensionUrlTemplate": "https://open-vsx.org/vscode/gallery/{publisher}/{name}/latest",
+    "controlUrl": "https://raw.githubusercontent.com/EclipseFdn/publish-extensions/refs/heads/master/extension-control/extensions.json"
+  },
+  "introductoryVideosUrl": "https://go.microsoft.com/fwlink/?linkid=832146",
+  "keyboardShortcutsUrlLinux": "https://go.microsoft.com/fwlink/?linkid=832144",
+  "keyboardShortcutsUrlMac": "https://go.microsoft.com/fwlink/?linkid=832143",
+  "keyboardShortcutsUrlWin": "https://go.microsoft.com/fwlink/?linkid=832145",
+  "linkProtectionTrustedDomains": [
+    "https://open-vsx.org"
+  ],
+  "releaseNotesUrl": "https://go.microsoft.com/fwlink/?LinkID=533483#vscode",
+  "requestFeatureUrl": "https://go.microsoft.com/fwlink/?LinkID=533482",
+  "tipsAndTricksUrl": "https://go.microsoft.com/fwlink/?linkid=852118",
+  "twitterUrl": "https://go.microsoft.com/fwlink/?LinkID=533687",
+  "updateUrl": "https://raw.githubusercontent.com/Neira/versions/refs/heads/master",
+  "downloadUrl": "https://github.com/Neira/neira/releases",
+  "quality": "stable",
+  "win32AppId": "{{763CBF88-25C6-4B10-952F-326AE657F16B}",
+  "win32UserAppId": "{{0FD05EB4-651E-4E78-A062-515204B47A3A}",
+  "configurationDefaults.workbench.appearance.locale": "ru",
+  "configurationDefaults": {
+    "workbench.appearance.locale": "ru"
+  },
+  "extensionAllowedBadgeProviders": [
+    "api.bintray.com",
+    "api.travis-ci.com",
+    "api.travis-ci.org",
+    "app.fossa.io",
+    "badge.buildkite.com",
+    "badge.fury.io",
+    "badge.waffle.io",
+    "badgen.net",
+    "badges.frapsoft.com",
+    "badges.gitter.im",
+    "badges.greenkeeper.io",
+    "cdn.travis-ci.com",
+    "cdn.travis-ci.org",
+    "ci.appveyor.com",
+    "circleci.com",
+    "cla.opensource.microsoft.com",
+    "codacy.com",
+    "codeclimate.com",
+    "codecov.io",
+    "coveralls.io",
+    "david-dm.org",
+    "deepscan.io",
+    "dev.azure.com",
+    "docs.rs",
+    "flat.badgen.net",
+    "gemnasium.com",
+    "githost.io",
+    "gitlab.com",
+    "godoc.org",
+    "goreportcard.com",
+    "img.shields.io",
+    "isitmaintained.com",
+    "marketplace.visualstudio.com",
+    "nodesecurity.io",
+    "opencollective.com",
+    "snyk.io",
+    "travis-ci.com",
+    "travis-ci.org",
+    "visualstudio.com",
+    "vsmarketplacebadge.apphb.com",
+    "www.bithound.io",
+    "www.versioneye.com"
+  ],
+  "extensionAllowedBadgeProvidersRegex": [
+    "^https:\\/\\/github\\.com\\/[^/]+\\/[^/]+\\/(actions\\/)?workflows\\/.*badge\\.svg"
+  ],
+  "extensionEnabledApiProposals": {
+    "ms-azuretools.vscode-dev-azurecloudshell": [
+      "contribEditSessions"
+    ],
+    "ms-vscode.vscode-selfhost-test-provider": [
+      "testObserver",
+      "testRelatedCode"
+    ],
+    "VisualStudioExptTeam.vscodeintellicode-completions": [
+      "inlineCompletionsAdditions"
+    ],
+    "ms-vsliveshare.vsliveshare": [
+      "contribMenuBarHome",
+      "contribShareMenu",
+      "contribStatusBarItems",
+      "diffCommand",
+      "documentFiltersExclusive",
+      "fileSearchProvider",
+      "findTextInFiles",
+      "notebookCellExecutionState",
+      "notebookLiveShare",
+      "terminalDimensions",
+      "terminalDataWriteEvent",
+      "textSearchProvider"
+    ],
+    "ms-vscode.js-debug": [
+      "portsAttributes",
+      "findTextInFiles",
+      "workspaceTrust",
+      "tunnels"
+    ],
+    "ms-toolsai.vscode-ai-remote": [
+      "resolvers"
+    ],
+    "ms-python.python": [
+      "codeActionAI",
+      "contribEditorContentMenu",
+      "quickPickSortByLabel",
+      "portsAttributes",
+      "testObserver",
+      "quickPickItemTooltip",
+      "terminalDataWriteEvent",
+      "terminalExecuteCommandEvent",
+      "notebookReplDocument",
+      "notebookVariableProvider",
+      "terminalShellEnv"
+    ],
+    "ms-python.vscode-python-envs": [
+      "terminalShellEnv"
+    ],
+    "ms-dotnettools.dotnet-interactive-vscode": [
+      "notebookMessaging"
+    ],
+    "GitHub.codespaces": [
+      "contribEditSessions",
+      "contribMenuBarHome",
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "resolvers",
+      "tunnels",
+      "terminalDataWriteEvent",
+      "treeViewReveal",
+      "notebookKernelSource"
+    ],
+    "ms-vscode.azure-repos": [
+      "extensionRuntime",
+      "fileSearchProvider",
+      "textSearchProvider"
+    ],
+    "ms-vscode.remote-repositories": [
+      "canonicalUriProvider",
+      "contribEditSessions",
+      "contribRemoteHelp",
+      "contribMenuBarHome",
+      "contribViewsRemote",
+      "contribViewsWelcome",
+      "contribShareMenu",
+      "documentFiltersExclusive",
+      "editSessionIdentityProvider",
+      "extensionRuntime",
+      "fileSearchProvider",
+      "quickPickSortByLabel",
+      "workspaceTrust",
+      "shareProvider",
+      "scmActionButton",
+      "scmSelectedProvider",
+      "scmValidation",
+      "textSearchProvider",
+      "timeline"
+    ],
+    "ms-vscode-remote.remote-wsl": [
+      "resolvers",
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "telemetry"
+    ],
+    "ms-vscode-remote.remote-ssh": [
+      "resolvers",
+      "tunnels",
+      "terminalDataWriteEvent",
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "telemetry"
+    ],
+    "ms-vscode.remote-server": [
+      "resolvers",
+      "tunnels",
+      "contribViewsWelcome"
+    ],
+    "ms-vscode.remote-explorer": [
+      "contribRemoteHelp",
+      "contribViewsRemote",
+      "extensionsAny"
+    ],
+    "ms-vscode-remote.remote-containers": [
+      "contribEditSessions",
+      "resolvers",
+      "portsAttributes",
+      "tunnels",
+      "workspaceTrust",
+      "terminalDimensions",
+      "contribRemoteHelp",
+      "contribViewsRemote"
+    ],
+    "ms-vscode.js-debug-nightly": [
+      "portsAttributes",
+      "findTextInFiles",
+      "workspaceTrust",
+      "tunnels"
+    ],
+    "ms-vscode.lsif-browser": [
+      "documentFiltersExclusive"
+    ],
+    "ms-vscode.vscode-speech": [
+      "speech"
+    ],
+    "GitHub.vscode-pull-request-github": [
+      "activeComment",
+      "chatParticipantAdditions",
+      "chatParticipantPrivate",
+      "codiconDecoration",
+      "codeActionRanges",
+      "commentingRangeHint",
+      "commentReactor",
+      "commentReveal",
+      "commentThreadApplicability",
+      "contribAccessibilityHelpContent",
+      "contribCommentEditorActionsMenu",
+      "contribCommentPeekContext",
+      "contribCommentThreadAdditionalMenu",
+      "contribCommentsViewThreadMenus",
+      "contribEditorContentMenu",
+      "contribMultiDiffEditorMenus",
+      "contribShareMenu",
+      "diffCommand",
+      "quickDiffProvider",
+      "remoteCodingAgents",
+      "shareProvider",
+      "tabInputTextMerge",
+      "tokenInformation",
+      "treeViewMarkdownMessage"
+    ],
+    "GitHub.copilot": [
+      "inlineCompletionsAdditions"
+    ],
+    "GitHub.copilot-nightly": [
+      "inlineCompletionsAdditions"
+    ],
+    "GitHub.copilot-chat": [
+      "interactive",
+      "terminalDataWriteEvent",
+      "terminalExecuteCommandEvent",
+      "terminalSelection",
+      "terminalQuickFixProvider",
+      "chatParticipantAdditions",
+      "defaultChatParticipant",
+      "embeddings",
+      "chatEditing",
+      "chatProvider",
+      "mappedEditsProvider",
+      "aiRelatedInformation",
+      "aiSettingsSearch",
+      "codeActionAI",
+      "findTextInFiles",
+      "findTextInFiles2",
+      "textSearchProvider",
+      "textSearchProvider2",
+      "activeComment",
+      "commentReveal",
+      "contribSourceControlInputBoxMenu",
+      "contribCommentEditorActionsMenu",
+      "contribCommentThreadAdditionalMenu",
+      "contribCommentsViewThreadMenus",
+      "newSymbolNamesProvider",
+      "findFiles2",
+      "chatReferenceDiagnostic",
+      "extensionsAny",
+      "authLearnMore",
+      "testObserver",
+      "aiTextSearchProvider",
+      "documentFiltersExclusive",
+      "chatParticipantPrivate",
+      "contribDebugCreateConfiguration",
+      "inlineCompletionsAdditions",
+      "chatReferenceBinaryData",
+      "languageModelSystem",
+      "languageModelCapabilities",
+      "languageModelDataPart",
+      "chatStatusItem",
+      "taskProblemMatcherStatus",
+      "contribLanguageModelToolSets",
+      "textDocumentChangeReason",
+      "resolvers"
+    ],
+    "GitHub.remotehub": [
+      "contribRemoteHelp",
+      "contribMenuBarHome",
+      "contribViewsRemote",
+      "contribViewsWelcome",
+      "documentFiltersExclusive",
+      "extensionRuntime",
+      "fileSearchProvider",
+      "quickPickSortByLabel",
+      "workspaceTrust",
+      "scmSelectedProvider",
+      "scmValidation",
+      "textSearchProvider",
+      "timeline"
+    ],
+    "ms-python.gather": [
+      "notebookCellExecutionState"
+    ],
+    "ms-python.vscode-pylance": [
+      "mcpConfigurationProvider",
+      "terminalShellEnv"
+    ],
+    "ms-python.debugpy": [
+      "contribViewsWelcome",
+      "debugVisualization",
+      "portsAttributes"
+    ],
+    "ms-toolsai.jupyter-renderers": [
+      "contribNotebookStaticPreloads"
+    ],
+    "ms-toolsai.jupyter": [
+      "notebookDeprecated",
+      "notebookMessaging",
+      "notebookMime",
+      "portsAttributes",
+      "quickPickSortByLabel",
+      "notebookKernelSource",
+      "interactiveWindow",
+      "notebookControllerAffinityHidden",
+      "contribNotebookStaticPreloads",
+      "quickPickItemTooltip",
+      "notebookExecution",
+      "notebookCellExecution",
+      "notebookVariableProvider",
+      "notebookReplDocument"
+    ],
+    "donjayamanne.kusto": [
+      "notebookVariableProvider"
+    ],
+    "ms-toolsai.tensorboard": [
+      "portsAttributes"
+    ],
+    "dbaeumer.vscode-eslint": [],
+    "ms-vscode.azure-sphere-tools-ui": [
+      "tunnels"
+    ],
+    "ms-azuretools.vscode-azureappservice": [
+      "terminalDataWriteEvent"
+    ],
+    "ms-vscode.anycode": [
+      "extensionsAny"
+    ],
+    "ms-vscode.cpptools": [
+      "terminalDataWriteEvent",
+      "chatParticipantAdditions"
+    ],
+    "vscjava.vscode-java-pack": [],
+    "ms-dotnettools.csdevkit": [
+      "inlineCompletionsAdditions"
+    ],
+    "ms-dotnettools.vscodeintellicode-csharp": [
+      "inlineCompletionsAdditions"
+    ],
+    "microsoft-IsvExpTools.powerplatform-vscode": [
+      "fileSearchProvider",
+      "textSearchProvider"
+    ],
+    "microsoft-IsvExpTools.powerplatform-vscode-preview": [
+      "fileSearchProvider",
+      "textSearchProvider"
+    ],
+    "TeamsDevApp.ms-teams-vscode-extension": [
+      "chatParticipantAdditions",
+      "languageModelSystem"
+    ],
+    "ms-toolsai.datawrangler": [],
+    "ms-vscode.vscode-commander": [],
+    "ms-vscode.vscode-websearchforcopilot": [],
+    "ms-vscode.vscode-copilot-vision": [
+      "chatReferenceBinaryData",
+      "codeActionAI"
+    ],
+    "ms-autodev.vscode-autodev": [
+      "chatParticipantAdditions"
+    ],
+    "vscjava.vscode-java-upgrade": [
+      "chatParticipantAdditions"
+    ],
+    "jeanp413.open-remote-ssh": [
+      "resolvers",
+      "tunnels",
+      "terminalDataWriteEvent",
+      "contribRemoteHelp",
+      "contribViewsRemote"
+    ],
+    "jeanp413.open-remote-wsl": [
+      "resolvers",
+      "contribRemoteHelp",
+      "contribViewsRemote"
+    ]
+  },
+  "extensionKind": {
+    "Shan.code-settings-sync": [
+      "ui"
+    ],
+    "shalldie.background": [
+      "ui"
+    ],
+    "techer.open-in-browser": [
+      "ui"
+    ],
+    "CoenraadS.bracket-pair-colorizer-2": [
+      "ui"
+    ],
+    "CoenraadS.bracket-pair-colorizer": [
+      "ui",
+      "workspace"
+    ],
+    "hiro-sun.vscode-emacs": [
+      "ui",
+      "workspace"
+    ],
+    "hnw.vscode-auto-open-markdown-preview": [
+      "ui",
+      "workspace"
+    ],
+    "wayou.vscode-todo-highlight": [
+      "ui",
+      "workspace"
+    ],
+    "aaron-bond.better-comments": [
+      "ui",
+      "workspace"
+    ],
+    "vscodevim.vim": [
+      "ui"
+    ],
+    "ollyhayes.colmak-vim": [
+      "ui"
+    ]
+  },
+  "extensionPointExtensionKind": {
+    "typescriptServerPlugins": [
+      "workspace"
+    ]
+  },
+  "extensionSyncedKeys": {
+    "ritwickdey.liveserver": [
+      "liveServer.setup.version"
+    ]
+  },
+  "extensionVirtualWorkspacesSupport": {
+    "esbenp.prettier-vscode": {
+      "default": false
+    },
+    "msjsdiag.debugger-for-chrome": {
+      "default": false
+    },
+    "redhat.java": {
+      "default": false
+    },
+    "HookyQR.beautify": {
+      "default": false
+    },
+    "ritwickdey.LiveServer": {
+      "default": false
+    },
+    "VisualStudioExptTeam.vscodeintellicode": {
+      "default": false
+    },
+    "octref.vetur": {
+      "default": false
+    },
+    "formulahendry.code-runner": {
+      "default": false
+    },
+    "xdebug.php-debug": {
+      "default": false
+    },
+    "ms-mssql.mssql": {
+      "default": false
+    },
+    "christian-kohler.path-intellisense": {
+      "default": false
+    },
+    "eg2.tslint": {
+      "default": false
+    },
+    "eg2.vscode-npm-script": {
+      "default": false
+    },
+    "donjayamanne.githistory": {
+      "default": false
+    },
+    "Zignd.html-css-class-completion": {
+      "default": false
+    },
+    "christian-kohler.npm-intellisense": {
+      "default": false
+    },
+    "EditorConfig.EditorConfig": {
+      "default": false
+    },
+    "austin.code-gnu-global": {
+      "default": false
+    },
+    "johnpapa.Angular2": {
+      "default": false
+    },
+    "ms-vscode.vscode-typescript-tslint-plugin": {
+      "default": false
+    },
+    "DotJoshJohnson.xml": {
+      "default": false
+    },
+    "techer.open-in-browser": {
+      "default": false
+    },
+    "tht13.python": {
+      "default": false
+    },
+    "bmewburn.vscode-intelephense-client": {
+      "default": false
+    },
+    "Angular.ng-template": {
+      "default": false
+    },
+    "xdebug.php-pack": {
+      "default": false
+    },
+    "dbaeumer.jshint": {
+      "default": false
+    },
+    "yzhang.markdown-all-in-one": {
+      "default": false
+    },
+    "Dart-Code.flutter": {
+      "default": false
+    },
+    "streetsidesoftware.code-spell-checker": {
+      "default": false
+    },
+    "rebornix.Ruby": {
+      "default": false
+    },
+    "ms-vscode.sublime-keybindings": {
+      "default": false
+    },
+    "mitaki28.vscode-clang": {
+      "default": false
+    },
+    "steoates.autoimport": {
+      "default": false
+    },
+    "donjayamanne.python-extension-pack": {
+      "default": false
+    },
+    "shd101wyy.markdown-preview-enhanced": {
+      "default": false
+    },
+    "mikestead.dotenv": {
+      "default": false
+    },
+    "pranaygp.vscode-css-peek": {
+      "default": false
+    },
+    "ikappas.phpcs": {
+      "default": false
+    },
+    "platformio.platformio-ide": {
+      "default": false
+    },
+    "jchannon.csharpextensions": {
+      "default": false
+    },
+    "gruntfuggly.todo-tree": {
+      "default": false
+    }
+  }
+}
++++ cp package.json package.json.bak
++++ setpath package version ''
++++ local jsonTmp
++++ replace 's|Microsoft Corporation|${APP_NAME}|' package.json
++++ is_gnu_sed
++++ sed --version
++++ sed -i '' -E 's|Microsoft Corporation|${APP_NAME}|' package.json
++++ cp resources/server/manifest.json resources/server/manifest.json.bak
++++ [[ stable == \i\n\s\i\d\e\r ]]
++++ setpath resources/server/manifest name Neira
++++ local jsonTmp
++++ setpath resources/server/manifest short_name Neira
++++ local jsonTmp
+++++ tr -d '\n'
++++ replace 's|\[\/\* BUILTIN_ANNOUNCEMENTS \*\/\]|[]|' src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.ts
++++ is_gnu_sed
++++ sed --version
++++ sed -i '' -E 's|\[\/\* BUILTIN_ANNOUNCEMENTS \*\/\]|[]|' src/vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.ts
++++ ../undo_telemetry.sh
++ SEARCH='\.data\.microsoft\.com'
++ REPLACEMENT='s|//[^/]+\.data\.microsoft\.com|//0\.0\.0\.0|g'
++ . ../utils.sh
+++ APP_NAME=Neira
++++ echo Neira
++++ awk '{print tolower($0)}'
+++ APP_NAME_LC=neira
+++ ASSETS_REPOSITORY=Neira/neira
+++ BINARY_NAME=neira
+++ GH_REPO_PATH=Neira/neira
+++ ORG_NAME=Neira
+++ exists gsed
+++ type -t gsed
++ is_gnu_sed
++ sed --version
++ export -f replace_with_debug
+++ date +%s
++ d1=1753759609
++ [[ osx == \l\i\n\u\x ]]
++ [[ osx == \o\s\x ]]
++ ./node_modules/@vscode/ripgrep/bin/rg --no-ignore -l '\.data\.microsoft\.com' .
++ xargs -I '{}' bash -c 'replace_with_debug "${1}" "{}"' _ 's|//[^/]+\.data\.microsoft\.com|//0\.0\.0\.0|g'
+found: ./remote/node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.gbl.min.js.map
+found: ./remote/node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.min.js.map
+found: ./remote/node_modules/@microsoft/1ds-post-js/bundle/ms.post.gbl.min.js.map
+found: ./remote/node_modules/@microsoft/1ds-post-js/bundle/ms.post.min.js.map
+found: ./remote/node_modules/@microsoft/1ds-post-js/bundle/ms.post.gbl.js.map
+found: ./remote/node_modules/@microsoft/1ds-post-js/bundle/ms.post.js.map
+found: ./remote/node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.js.map
+found: ./remote/node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.gbl.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/src/InternalConstants.ts
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.min.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.min.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core.min.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.min.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.min.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/dist-esm/src/InternalConstants.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core.min.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.min.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/dist-esm/src/InternalConstants.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/dist-esm/src/InternalConstants.d.ts
+found: ./remote/node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.min.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/dist/ms.core.min.js.map
+found: ./remote/node_modules/@microsoft/1ds-core-js/dist/ms.core.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/dist/ms.core.min.js
+found: ./remote/node_modules/@microsoft/1ds-core-js/dist/ms.core.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/dist/ms.core.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/dist/ms.core.min.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/src/InternalConstants.ts
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/dist/ms.core.min.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/dist/ms.core.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.min.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.min.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/dist-esm/src/InternalConstants.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/dist-esm/src/InternalConstants.d.ts
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/dist-esm/src/InternalConstants.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.min.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core.min.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.min.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.min.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.min.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core.min.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.js
+found: ./remote/web/node_modules/@microsoft/1ds-core-js/bundle/ms.core.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.gbl.min.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-post-js/bundle/ms.post.gbl.min.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-post-js/bundle/ms.post.min.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.min.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-post-js/bundle/ms.post.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-post-js/bundle/ms.post.gbl.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.gbl.js.map
+found: ./remote/web/node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.js.map
+found: ./node_modules/@microsoft/1ds-core-js/src/InternalConstants.ts
+found: ./node_modules/@microsoft/1ds-core-js/dist-esm/src/InternalConstants.js.map
+found: ./node_modules/@microsoft/1ds-core-js/dist-esm/src/InternalConstants.js
+found: ./node_modules/@microsoft/1ds-core-js/dist-esm/src/InternalConstants.d.ts
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.js.map
+found: ./node_modules/@microsoft/1ds-core-js/dist/ms.core.js.map
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.js.map
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.min.js
+found: ./node_modules/@microsoft/1ds-core-js/dist/ms.core.min.js.map
+found: ./node_modules/@microsoft/1ds-core-js/dist/ms.core.min.js
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.js
+found: ./node_modules/@microsoft/1ds-core-js/dist/ms.core.js
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core.min.js
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.min.js
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.min.js.map
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core.js
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.min.js.map
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.js
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core.min.js.map
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.min.js
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.js
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core-3.2.13.gbl.min.js.map
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core.gbl.js.map
+found: ./node_modules/@microsoft/1ds-core-js/bundle/ms.core.js.map
+found: ./node_modules/@microsoft/1ds-post-js/bundle/ms.post.gbl.min.js.map
+found: ./node_modules/@microsoft/1ds-post-js/bundle/ms.post.min.js.map
+found: ./node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.gbl.min.js.map
+found: ./node_modules/@microsoft/1ds-post-js/bundle/ms.post.js.map
+found: ./node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.min.js.map
+found: ./node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.gbl.js.map
+found: ./node_modules/@microsoft/1ds-post-js/bundle/ms.post.gbl.js.map
+found: ./node_modules/@microsoft/1ds-post-js/bundle/ms.post-3.2.13.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/git/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/git/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/git/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/git/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/github-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/github-authentication/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+found: ./extensions/github-authentication/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/github/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+found: ./extensions/github/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/github/node_modules/@vscode/extension-telemetry/dist/node-esm/common/1dsClientFactory.js
+found: ./extensions/github/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/github/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/markdown-language-features/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/markdown-language-features/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/typescript-language-features/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/typescript-language-features/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/typescript-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/microsoft-authentication/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/microsoft-authentication/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+found: ./extensions/microsoft-authentication/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/simple-browser/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+found: ./extensions/simple-browser/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/simple-browser/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/json-language-features/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/json-language-features/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+found: ./extensions/json-language-features/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/html-language-features/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/html-language-features/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/html-language-features/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+found: ./extensions/media-preview/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/media-preview/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/media-preview/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post.gbl.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-post-js/bundle/es5/ms.post-4.3.4.gbl.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-post-js/dist/es5/ms.post.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/dist-es5/InternalConstants.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/dist/es5/ms.core.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.gbl.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core-4.3.4.min.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.gbl.js.map
+found: ./extensions/merge-conflict/node_modules/@microsoft/1ds-core-js/bundle/es5/ms.core.js.map
+found: ./extensions/merge-conflict/node_modules/@vscode/extension-telemetry/dist/node/common/1dsClientFactory.js
+found: ./extensions/merge-conflict/node_modules/@vscode/extension-telemetry/dist/browser/common/1dsClientFactory.js
+++ date +%s
++ d2=1753759616
++ echo 'undo_telemetry: 7s'
+undo_telemetry: 7s
++++ replace 's|Microsoft Corporation|${APP_NAME}|' build/lib/electron.js
++++ is_gnu_sed
++++ sed --version
++++ sed -i '' -E 's|Microsoft Corporation|${APP_NAME}|' build/lib/electron.js
++++ replace 's|Microsoft Corporation|${APP_NAME}|' build/lib/electron.ts
++++ is_gnu_sed
++++ sed --version
++++ sed -i '' -E 's|Microsoft Corporation|${APP_NAME}|' build/lib/electron.ts
++++ replace 's|([0-9]) Microsoft|\1 ${APP_NAME}|' build/lib/electron.js
++++ is_gnu_sed
++++ sed --version
++++ sed -i '' -E 's|([0-9]) Microsoft|\1 ${APP_NAME}|' build/lib/electron.js
++++ replace 's|([0-9]) Microsoft|\1 ${APP_NAME}|' build/lib/electron.ts
++++ is_gnu_sed
++++ sed --version
++++ sed -i '' -E 's|([0-9]) Microsoft|\1 ${APP_NAME}|' build/lib/electron.ts
++++ [[ osx == \l\i\n\u\x ]]
++++ [[ osx == \w\i\n\d\o\w\s ]]
++++ cd ..
+++ cd vscode
+++ export NODE_OPTIONS=--max-old-space-size=8192
+++ NODE_OPTIONS=--max-old-space-size=8192
+++ npm run monaco-compile-check
+
+> monaco-compile-check
+> tsc -p src/tsconfig.monaco.json --noEmit
+
+++ npm run valid-layers-check
+
+> valid-layers-check
+> node build/checker/layersChecker.js && tsc -p build/checker/tsconfig.browser.json && tsc -p build/checker/tsconfig.worker.json && tsc -p build/checker/tsconfig.node.json && tsc -p build/checker/tsconfig.electron-browser.json && tsc -p build/checker/tsconfig.electron-main.json && tsc -p build/checker/tsconfig.electron-utility.json
+
+src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts(303,4): error TS1117: An object literal cannot have multiple properties with the same name.
+src/vs/workbench/contrib/extensions/browser/extensions.contribution.ts(310,4): error TS1117: An object literal cannot have multiple properties with the same name.

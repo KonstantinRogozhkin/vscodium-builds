@@ -1,222 +1,449 @@
-<div id="vscodium-logo" align="center">
-    <br />
-    <img src="./icons/stable/codium_cnl.svg" alt="VSCodium Logo" width="200"/>
-    <h1>VSCodium</h1>
-    <h3>Free/Libre Open Source Software Binaries of Visual Studio Code</h3>
-</div>
+# 🚀 Neira - Автоматическая сборка
 
-<div id="badges" align="center">
+> **Neira** - это кастомная версия Visual Studio Code с открытым исходным кодом, основанная на VSCodium, с собственным брендингом и русской локализацией по умолчанию.
 
-[![current release](https://img.shields.io/github/release/vscodium/vscodium.svg)](https://github.com/vscodium/vscodium/releases)
-[![license](https://img.shields.io/github/license/VSCodium/vscodium.svg)](https://github.com/VSCodium/vscodium/blob/master/LICENSE)
-[![Gitter](https://img.shields.io/gitter/room/vscodium/vscodium.svg)](https://gitter.im/VSCodium/Lobby)
-[![codium](https://snapcraft.io//codium/badge.svg)](https://snapcraft.io/codium)
-[![codium](https://snapcraft.io//codium/trending.svg?name=0)](https://snapcraft.io/codium)
+## 📋 Содержание
 
-[![build status (linux)](https://img.shields.io/github/actions/workflow/status/VSCodium/vscodium/stable-linux.yml?branch=master&label=build%28linux%29)](https://github.com/VSCodium/vscodium/actions/workflows/stable-linux.yml?query=branch%3Amaster)
-[![build status (macos)](https://img.shields.io/github/actions/workflow/status/VSCodium/vscodium/stable-macos.yml?branch=master&label=build%28macOS%29)](https://github.com/VSCodium/vscodium/actions/workflows/stable-macos.yml?query=branch%3Amaster)
-[![build status (windows)](https://img.shields.io/github/actions/workflow/status/VSCodium/vscodium/stable-windows.yml?branch=master&label=build%28windows%29)](https://github.com/VSCodium/vscodium/actions/workflows/stable-windows.yml?query=branch%3Amaster)
+- [Быстрый старт](#быстрый-старт)
+- [Автоматическая сборка](#автоматическая-сборка)
+- [Ручная сборка](#ручная-сборка)
+- [Скачивание готовых сборок](#скачивание-готовых-сборок)
+- [Поддерживаемые платформы](#поддерживаемые-платформы)
+- [Устранение неполадок](#устранение-неполадок)
+- [Участие в разработке](#участие-в-разработке)
 
-</div>
+## 🚀 Быстрый старт
 
-**This is not a fork. This is a repository of scripts to automatically build [Microsoft's `vscode` repository](https://github.com/microsoft/vscode) into freely-licensed binaries with a community-driven default configuration.**
+### Для пользователей (скачать готовую сборку)
 
-## Table of Contents
+1. Перейдите в раздел [**Actions**](https://github.com/KonstantinRogozhkin/vscodium-builds/actions)
+2. Выберите последнюю успешную сборку (зеленая галочка ✅)
+3. Скачайте нужный артефакт из секции **"Artifacts"**
+4. Установите Neira как обычную программу
 
-- [Download/Install](#download-install)
-  - [Install with Brew](#install-with-brew)
-  - [Install with Windows Package Manager (WinGet)](#install-with-winget)
-  - [Install with Chocolatey](#install-with-choco)
-  - [Install with Scoop](#install-with-scoop)
-  - [Install with snap](#install-with-snap)
-  - [Install with Package Manager](#install-with-package-manager)
-  - [Install on Arch Linux](#install-on-arch-linux)
-  - [Flatpak Option](#flatpak)
-- [Build](#build)
-- [Why Does This Exist](#why)
-- [More Info](#more-info)
-- [Supported Platforms](#supported-platforms)
+### Для разработчиков (запустить новую сборку)
 
-## <a id="download-install"></a>Download/Install
+1. Перейдите в [**Actions**](https://github.com/KonstantinRogozhkin/vscodium-builds/actions) → **"Manual Build"**
+2. Нажмите **"Run workflow"**
+3. Выберите платформу и архитектуру
+4. Дождитесь завершения (~30-40 минут)
+5. Скачайте артефакты Neira
 
-:tada: :tada:
-Download latest release here:
-[stable](https://github.com/VSCodium/vscodium/releases) or
-[insiders](https://github.com/VSCodium/vscodium-insiders/releases)
-:tada: :tada:
+## ✨ Особенности Neira
 
-[More info / helpful tips are here.](https://github.com/VSCodium/vscodium/blob/master/docs/index.md)
+**Neira** - это кастомизированная версия VS Code, основанная на VSCodium, с дополнительными улучшениями:
 
+### 🎨 Собственный брендинг
+- **Название приложения**: Neira (вместо VSCodium)
+- **Исполняемый файл**: `neira` (вместо `codium`)
+- **Уникальные иконки**: Прозрачные иконки Neira с современным дизайном
+- **Настроенные идентификаторы**: Собственные ID приложения для всех платформ
 
-#### <a id="install-with-brew"></a>Install with Brew (Mac)
+### 🌍 Русская локализация
+- **Русский язык по умолчанию**: Интерфейс на русском языке из коробки
+- **Локализованные сообщения**: Все системные уведомления на русском
+- **Поддержка мультиязычности**: Возможность переключения на другие языки
 
-If you are on a Mac and have [Homebrew](https://brew.sh/) installed:
-```bash
-# stable
-brew install --cask vscodium
+### 🔧 Техническая база
+- **Основа**: VSCodium (VS Code без телеметрии Microsoft)
+- **Автоматическая сборка**: GitHub Actions с поддержкой всех платформ
+- **Совместимость**: Полная совместимость с расширениями VS Code
+- **Открытый исходный код**: Все изменения доступны в репозитории
 
-# insiders
-brew install --cask vscodium@insiders
-```
+### 📦 Форматы распространения
+- **macOS**: `.dmg` установщик и `.app` пакет
+- **Windows**: `.exe`, `.msi` установщики и `.zip` архив
+- **Linux**: `.deb`, `.rpm` пакеты и `.tar.gz` архив
+- **CLI инструменты**: Командная строка `neira` для всех платформ
 
-*Note for macOS users: if you can't open the App, please read [the following troubleshooting](https://github.com/VSCodium/vscodium/blob/master/docs/troubleshooting.md#macos).*
+## 🤖 Автоматическая сборка
 
-#### <a id="install-with-winget"></a>Install with Windows Package Manager (WinGet)
+### GitHub Actions Workflows
 
-If you use Windows and have [Windows Package Manager](https://github.com/microsoft/winget-cli) installed:
-```cmd
-:: stable
-winget install -e --id VSCodium.VSCodium
+Репозиторий содержит несколько автоматизированных сборочных процессов:
 
-:: insider
-winget install -e --id VSCodium.VSCodium.Insiders
-```
+#### 1. **Build Windows** - Сборка для Windows
+- **Триггеры**: Push в master, Pull Request, ручной запуск
+- **Архитектуры**: x64, ARM64
+- **Артефакты**: .exe, .msi, .zip файлы
 
-#### <a id="install-with-choco"></a>Install with Chocolatey (Windows)
+#### 2. **Manual Build** - Универсальная сборка
+- **Триггеры**: Только ручной запуск
+- **Платформы**: Windows, macOS, Linux
+- **Архитектуры**: x64, ARM64
 
-If you use Windows and have [Chocolatey](https://chocolatey.org) installed (thanks to [@Thilas](https://github.com/Thilas)):
-```cmd
-:: stable
-choco install vscodium
+### Запуск сборки через веб-интерфейс
 
-:: insider
-choco install vscodium-insiders
-```
+1. **Откройте раздел Actions**: https://github.com/KonstantinRogozhkin/vscodium-builds/actions
+2. **Выберите workflow**:
+   - `Build Windows` - для Windows
+   - `Manual Build` - для любой платформы
+3. **Нажмите "Run workflow"**
+4. **Настройте параметры**:
+   - Платформа (windows/macos/linux)
+   - Архитектура (x64/arm64)
+   - Пропустить компиляцию (для ускорения)
+5. **Запустите сборку**
 
-#### <a id="install-with-scoop"></a>Install with Scoop (Windows)
-
-If you use Windows and have [Scoop](https://scoop.sh) installed:
-```bash
-scoop bucket add extras
-scoop install vscodium
-```
-
-#### <a id="install-with-snap"></a>Install with snap (GNU/Linux)
-
-VSCodium is available in the [Snap Store](https://snapcraft.io/) as [Codium](https://snapcraft.io/codium), thanks to the help of the [Snapcrafters](https://github.com/snapcrafters/codium) community.
-If your GNU/Linux distribution has support for [snaps](https://snapcraft.io/docs/installing-snapd):
+### Запуск сборки через командную строку
 
 ```bash
-snap install codium --classic
+# Установите GitHub CLI
+brew install gh
+
+# Авторизуйтесь
+gh auth login
+
+# Запустите сборку Windows x64
+gh workflow run "Build Windows" --field vscode_arch=x64
+
+# Запустите универсальную сборку
+gh workflow run "Manual Build" \
+  --field platform=windows \
+  --field architecture=x64 \
+  --field skip_compile=false
+
+# Проверьте статус
+gh run list --limit=3
+
+# Скачайте артефакты (после завершения)
+gh run download [RUN_ID] --dir ./artifacts
 ```
 
-#### <a id="install-with-package-manager"></a>Install with Package Manager (GNU/Linux)
+## 🔨 Ручная сборка
 
-You can always install using the downloads (deb, rpm, tar) on the releases page for [stable](https://github.com/VSCodium/vscodium/releases) or [insiders](https://github.com/VSCodium/vscodium-insiders/releases), but you can also install using your favorite package manager and get automatic updates.
+### Требования
 
-[@paulcarroty](https://github.com/paulcarroty) has set up a repository with instructions for `apt`, `dnf` and `zypper` [here](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo).
+#### Общие зависимости
+- **Node.js** 22.15.1+
+- **Python** 3.11+
+- **Git**
+- **jq**
+- **Rust** (rustup)
 
-Any issues installing VSCodium using your package manager should be directed to that repository's issue tracker.
+#### macOS
+```bash
+# Установка через Homebrew
+brew install node@22 python@3.11 git jq
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
-#### <a id="install-on-arch-linux"></a>Install on Arch Linux
+#### Windows
+- **PowerShell**
+- **Visual Studio Build Tools** или **Visual Studio Community**
+- **WiX Toolset** (для MSI пакетов)
+- **7-Zip**
 
-VSCodium is available in [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository), maintained by [@binex-dsk](https://github.com/binex-dsk) as package [vscodium-bin](https://aur.archlinux.org/packages/vscodium-bin/) (stable) and as [vscodium-insiders-bin](https://aur.archlinux.org/packages/vscodium-insiders-bin).
+#### Linux (Ubuntu/Debian)
+```bash
+sudo apt update
+sudo apt install -y build-essential libx11-dev libxkbfile-dev \
+  libsecret-1-dev libkrb5-dev fakeroot rpm imagemagick
+```
 
-If you want to save disk space by having VSCodium use the Electron system-wide, you also have [vscodium-electron](https://aur.archlinux.org/packages/vscodium-electron),
-maintained by [@m00nw4tch3r](https://aur.archlinux.org/account/m00nw4tch3r).
+### Процесс сборки
 
-An alternative package [vscodium-git](https://aur.archlinux.org/packages/vscodium-git/), maintained by [@cedricroijakkers](https://github.com/cedricroijakkers), is also available should you wish to compile from source yourself.
+#### 1. Клонирование репозитория
+```bash
+git clone https://github.com/KonstantinRogozhkin/vscodium-builds.git
+cd vscodium-builds
+```
 
-#### <a id="flatpak"></a>Flatpak Option (GNU/Linux)
+#### 2. Быстрая сборка (для разработки)
+```bash
+# macOS/Linux
+./dev/build.sh
 
-VSCodium is available as a Flatpak app [here](https://flathub.org/apps/details/com.vscodium.codium) and the build repo is [here](https://github.com/flathub/com.vscodium.codium).
-If your distribution has support for [flatpak](https://flathub.org), and you have enabled the [flathub repo](https://flatpak.org/setup/):
+# Windows
+powershell -ExecutionPolicy ByPass -File .\dev\build.ps1
+```
+
+#### 3. Полная сборка (для продакшена)
+```bash
+# Настройка переменных окружения
+export SHOULD_BUILD="yes"
+export SHOULD_BUILD_REH="no"
+export CI_BUILD="no"
+export OS_NAME="linux"  # или "osx", "windows"
+export VSCODE_ARCH="x64"  # или "arm64"
+export VSCODE_QUALITY="stable"
+
+# Получение исходного кода
+./get_repo.sh
+
+# Сборка
+./build.sh
+```
+
+#### 4. Создание пакетов
+```bash
+# Подготовка ассетов
+./prepare_assets.sh
+
+# Создание контрольных сумм
+./prepare_checksums.sh
+```
+
+### Флаги сборки
+
+Скрипт `dev/build.sh` поддерживает следующие флаги:
+
+- **`-i`** - Сборка Insiders версии
+- **`-l`** - Использовать последнюю версию VS Code
+- **`-o`** - Пропустить этап сборки
+- **`-p`** - Создать пакеты/установщики
+- **`-s`** - Не загружать исходный код заново
 
 ```bash
-flatpak install flathub com.vscodium.codium
-flatpak run com.vscodium.codium
+# Примеры использования
+./dev/build.sh -i          # Insiders версия
+./dev/build.sh -l          # Последняя версия
+./dev/build.sh -p          # С созданием пакетов
+./dev/build.sh -i -l -p    # Комбинация флагов
 ```
 
-## <a id="build"></a>Build
+## 📦 Скачивание готовых сборок
 
-Build instructions can be found [here](https://github.com/VSCodium/vscodium/blob/master/docs/howto-build.md)
+### Через веб-интерфейс
 
-## <a id="why"></a>Why Does This Exist
+1. **Перейдите в Actions**: https://github.com/KonstantinRogozhkin/vscodium-builds/actions
+2. **Выберите завершенную сборку** (зеленая галочка ✅)
+3. **Прокрутите вниз до "Artifacts"**
+4. **Скачайте нужный файл**:
+   - `vscodium-windows-x64` - Windows 64-bit
+   - `vscodium-windows-arm64` - Windows ARM64
+   - `vscodium-macos-*` - macOS
+   - `vscodium-linux-*` - Linux
 
-This repository contains build files to generate free release binaries of Microsoft's Visual Studio Code. When we speak of "free software", we're talking about freedom, not price.
+### Через командную строку
 
-Microsoft's releases of Visual Studio Code are licensed under [this not-FLOSS license](https://code.visualstudio.com/license) and contain telemetry/tracking. According to [this comment](https://github.com/Microsoft/vscode/issues/60#issuecomment-161792005) from a Visual Studio Code maintainer:
+```bash
+# Список последних сборок
+gh run list --limit=5
 
-> When we [Microsoft] build Visual Studio Code, we do exactly this. We clone the vscode repository, we lay down a customized product.json that has Microsoft specific functionality (telemetry, gallery, logo, etc.), and then produce a build that we release under our license.
->
-> When you clone and build from the vscode repo, none of these endpoints are configured in the default product.json. Therefore, you generate a "clean" build, without the Microsoft customizations, which is by default licensed under the MIT license
+# Скачивание артефактов
+gh run download [RUN_ID] --dir ./downloads
 
-This repo exists so that you don't have to download+build from source. The build scripts in this repo clone Microsoft's vscode repo, run the build commands, and upload the resulting binaries to [GitHub releases](https://github.com/VSCodium/vscodium/releases). __These binaries are licensed under the MIT license. Telemetry is disabled.__
+# Автоматическое скачивание последней сборки
+./monitor-build.sh  # выберите опцию 4
+```
 
-If you want to build from source yourself, head over to [Microsoft's vscode repo](https://github.com/Microsoft/vscode) and follow their [instructions](https://github.com/Microsoft/vscode/wiki/How-to-Contribute#build-and-run). This repo exists to make it easier to get the latest version of MIT-licensed Visual Studio Code.
+### Типы файлов
 
-Microsoft's build process (which we are running to build the binaries) does download additional files. Those packages downloaded during build are:
+#### Windows
+- **`.exe`** - Установщик (рекомендуется)
+- **`.msi`** - MSI пакет для корпоративного развертывания
+- **`.zip`** - Портативная версия
 
-- Pre-built extensions from the GitHub:
-  - [ms-vscode.js-debug-companion](https://github.com/microsoft/vscode-js-debug-companion)
-  - [ms-vscode.js-debug](https://github.com/microsoft/vscode-js-debug)
-  - [ms-vscode.vscode-js-profile-table](https://github.com/microsoft/vscode-js-profile-visualizer)
-- From [Electron releases](https://github.com/electron/electron/releases) (using [gulp-atom-electron](https://github.com/joaomoreno/gulp-atom-electron))
-  - electron
-  - ffmpeg
+#### macOS
+- **`.dmg`** - Образ диска (рекомендуется)
+- **`.zip`** - Архив приложения
 
-## <a id="more-info"></a>More Info
+#### Linux
+- **`.deb`** - Пакет для Ubuntu/Debian
+- **`.rpm`** - Пакет для RedHat/CentOS/Fedora
+- **`.tar.gz`** - Универсальный архив
+- **`.AppImage`** - Портативное приложение
 
-### Documentation
+## 🖥️ Поддерживаемые платформы
 
-For more information on getting all the telemetry disabled, tips for migrating from Visual Studio Code to VSCodium and more, have a look at [the Docs page](https://github.com/VSCodium/vscodium/blob/master/docs/index.md) page.
+| Платформа | Архитектуры | Статус | Примечания |
+|-----------|-------------|--------|------------|
+| **Windows** | x64, ARM64 | ✅ Полная поддержка | Все типы пакетов |
+| **macOS** | x64, ARM64 (Apple Silicon) | ✅ Полная поддержка | Требует macOS 10.15+ |
+| **Linux** | x64, ARM64 | ✅ Полная поддержка | Ubuntu 18.04+, CentOS 7+ |
 
-### Troubleshooting
+### Системные требования
 
-If you have any issue, please check [the Troubleshooting page](https://github.com/VSCodium/vscodium/blob/master/docs/troubleshooting.md) or the existing issues.
+#### Минимальные
+- **ОЗУ**: 1 ГБ
+- **Диск**: 200 МБ свободного места
+- **ОС**: Windows 10, macOS 10.15, Ubuntu 18.04
 
-### Extensions and the Marketplace
+#### Рекомендуемые
+- **ОЗУ**: 4 ГБ+
+- **Диск**: 1 ГБ свободного места
+- **ОС**: Последние версии
 
-According to the Visual Studio Marketplace [Terms of Use](https://aka.ms/vsmarketplace-ToU), _you may only install and use Marketplace Offerings with Visual Studio Products and Services._ For this reason, VSCodium uses [open-vsx.org](https://open-vsx.org/), an open source registry for Visual Studio Code extensions. See the [Extensions + Marketplace](https://github.com/VSCodium/vscodium/blob/master/docs/index.md#extensions-marketplace) section on the Docs page for more details.
+## 🛠️ Мониторинг сборки
 
-Please note that some Visual Studio Code extensions have licenses that restrict their use to the official Visual Studio Code builds and therefore do not work with VSCodium. See [this note](https://github.com/VSCodium/vscodium/blob/master/docs/extensions.md#proprietary-debugging-tools) on the Docs page for what's been found so far and possible workarounds.
+### Скрипт мониторинга
 
-### How are the VSCodium binaries built?
+```bash
+# Запуск интерактивного мониторинга
+./monitor-build.sh
 
-If you would like to see the commands we run to build `vscode` into VSCodium binaries, have a look at the workflow files in `.github/workflows` for Windows, GNU/Linux and macOS. These build files call all the other scripts in the repo. If you find something that doesn't make sense, feel free to ask about it [on Gitter](https://gitter.im/VSCodium/Lobby).
+# Доступные опции:
+# 1. Показать статус сборок
+# 2. Показать детали последней сборки  
+# 3. Показать логи
+# 4. Скачать артефакты
+# 5. Открыть в браузере
+# 6. Автообновление каждые 30 сек
+```
 
-The builds are run every day, but exit early if there isn't a new release from Microsoft.
+### Тестирование workflow локально
 
-## <a id="supported-platforms"></a>Supported Platforms
+```bash
+# Установка act (для локального тестирования)
+brew install act
 
-The minimal version is limited by the core component Electron, you may want to check its [platform prerequisites](https://www.electronjs.org/docs/latest/development/build-instructions-gn#platform-prerequisites).
+# Запуск тестового скрипта
+./test-workflow.sh
 
-- [x] macOS (`zip`, `dmg`) macOS 10.15 or newer x64
-- [x] macOS (`zip`, `dmg`) macOS 11.0 or newer arm64
-- [x] GNU/Linux x64 (`deb`, `rpm`, `AppImage`, `snap`, `tar.gz`)
-- [x] GNU/Linux arm64 (`deb`, `rpm`, `snap`, `tar.gz`)
-- [x] GNU/Linux armhf (`deb`, `rpm`, `tar.gz`)
-- [x] GNU/Linux riscv64 (`tar.gz`)
-- [x] GNU/Linux loong64 (`tar.gz`)
-- [x] GNU/Linux ppc64le (`tar.gz`)
-- [x] Windows 10 / Server 2012 R2 or newer x64
-- [x] Windows 10 / Server 2012 R2 or newer arm64
+# Ручной запуск workflow
+act workflow_dispatch -W .github/workflows/build-windows.yml \
+  --input vscode_arch=x64
+```
 
-## <a id="thanks"></a>Special thanks
+## 🚨 Устранение неполадок
 
-<table>
-  <tr>
-    <td><a href="https://github.com/jaredreich" target="_blank">@jaredreich</a></td>
-    <td>for the logo</td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/PalinuroSec" target="_blank">@PalinuroSec</a></td>
-    <td>for CDN and domain name</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.macstadium.com" target="_blank"><img src="https://images.prismic.io/macstadium/66fbce64-707e-41f3-b547-241908884716_MacStadium_Logo.png?w=128&q=75" width="128" height="49" alt="MacStadium logo" /></a></td>
-    <td>for providing a Mac mini M1</td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/daiyam" target="_blank">@daiyam</a></td>
-    <td>for macOS certificate</td>
-  </tr>
-  <tr>
-    <td><a href="https://signpath.org/" target="_blank"><img src="https://avatars.githubusercontent.com/u/34448643" height="30" alt="SignPath logo" /></a></td>
-    <td>free code signing on Windows provided by <a href="https://signpath.io/" target="_blank">SignPath.io</a>, certificate by <a href="https://signpath.org/" target="_blank">SignPath Foundation</a></td>
-  </tr>
-</table>
+### Частые проблемы
 
-## <a id="license"></a>License
+#### 1. Ошибка "No space left on device"
+```bash
+# Очистка кэша Docker (если используете act)
+docker system prune -a
 
-[MIT](https://github.com/VSCodium/vscodium/blob/master/LICENSE)
+# Очистка node_modules
+find . -name "node_modules" -type d -exec rm -rf {} +
+```
+
+#### 2. Ошибки компиляции
+```bash
+# Проверка версий зависимостей
+node --version    # Должно быть 22.15.1+
+python3 --version # Должно быть 3.11+
+rustc --version   # Должно быть 1.70+
+
+# Переустановка зависимостей
+rm -rf node_modules package-lock.json
+npm install
+```
+
+#### 3. Таймауты сборки
+- Увеличьте timeout в workflow файлах
+- Проверьте интернет-соединение
+- Используйте флаг `-s` для пропуска загрузки исходников
+
+#### 4. Ошибки подписи (только для официальных релизов)
+- Подпись кода требует специальных сертификатов
+- Для личного использования подпись не обязательна
+- Удалите секции signing из workflow
+
+### Логи и отладка
+
+```bash
+# Просмотр логов сборки
+gh run view [RUN_ID] --log
+
+# Просмотр логов конкретного job
+gh run view [RUN_ID] --job=[JOB_ID] --log
+
+# Локальная отладка
+DEBUG=1 ./dev/build.sh
+```
+
+### Получение помощи
+
+1. **Проверьте логи** в Actions
+2. **Сравните с оригинальными** workflow VSCodium
+3. **Создайте Issue** с описанием проблемы
+4. **Приложите логи** и информацию о системе
+
+## 🤝 Участие в разработке
+
+### Структура проекта
+
+```
+vscodium-builds/
+├── .github/workflows/     # GitHub Actions workflows
+│   ├── build-windows.yml  # Автоматическая сборка Windows
+│   ├── manual-build.yml   # Универсальная сборка
+│   └── README.md          # Документация workflows
+├── dev/                   # Скрипты для разработки
+│   └── build.sh           # Быстрая сборка
+├── build/                 # Скрипты сборки
+├── patches/               # Патчи для VS Code
+├── docs/                  # Документация
+├── monitor-build.sh       # Мониторинг сборки
+├── test-workflow.sh       # Тестирование workflows
+├── README-RU.md          # Русская документация
+└── DEPLOY.md             # Инструкции по деплою
+```
+
+### Добавление новых функций
+
+1. **Форкните репозиторий**
+2. **Создайте ветку** для новой функции
+3. **Внесите изменения**
+4. **Протестируйте** локально
+5. **Создайте Pull Request**
+
+### Кастомизация сборки
+
+#### Изменение версий зависимостей
+```yaml
+# В .github/workflows/*.yml
+- name: Setup Node.js
+  uses: actions/setup-node@v4
+  with:
+    node-version: '22.15.1'  # Измените здесь
+```
+
+#### Добавление новых архитектур
+```yaml
+# В matrix strategy
+matrix:
+  vscode_arch:
+    - x64
+    - arm64
+    - ia32  # Добавьте новую
+```
+
+#### Настройка времени хранения артефактов
+```yaml
+- name: Upload artifacts
+  uses: actions/upload-artifact@v4
+  with:
+    retention-days: 30  # 1-90 дней
+```
+
+## 📊 Статистика и метрики
+
+### Время сборки (примерное)
+
+| Этап | Windows | macOS | Linux |
+|------|---------|-------|-------|
+| **Компиляция** | 15-25 мин | 20-30 мин | 15-25 мин |
+| **Сборка пакетов** | 10-15 мин | 15-20 мин | 10-15 мин |
+| **Общее время** | 25-40 мин | 35-50 мин | 25-40 мин |
+
+### Размеры артефактов
+
+| Тип файла | Размер | Описание |
+|-----------|--------|----------|
+| **Windows .exe** | ~80-100 МБ | Установщик |
+| **Windows .msi** | ~80-100 МБ | MSI пакет |
+| **Windows .zip** | ~200-250 МБ | Портативная версия |
+| **macOS .dmg** | ~100-120 МБ | Образ диска |
+| **Linux .deb** | ~80-100 МБ | DEB пакет |
+| **Linux .AppImage** | ~200-250 МБ | Портативное приложение |
+
+## 🔗 Полезные ссылки
+
+- **Официальный VSCodium**: https://vscodium.com/
+- **Исходный код VS Code**: https://github.com/microsoft/vscode
+- **Документация VS Code**: https://code.visualstudio.com/docs
+- **GitHub Actions**: https://docs.github.com/en/actions
+- **Electron**: https://www.electronjs.org/
+
+## 📄 Лицензия
+
+Этот проект использует лицензию MIT. VSCodium распространяется под лицензией MIT.
+
+---
+
+**Создано с ❤️ для русскоязычного сообщества разработчиков**
+
+> Если у вас есть вопросы или предложения, создайте Issue или Pull Request!

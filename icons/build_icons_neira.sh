@@ -68,18 +68,25 @@ get_icon_path() {
 
 build_darwin_main() { # {{{
   if [[ ! -f "${SRC_PREFIX}src/${QUALITY}/resources/darwin/code.icns" ]]; then
-    local icon_path
-    icon_path=$(get_icon_path "codium_cnl.svg" "512")
-    
-    rsvg-convert -w 655 -h 655 "${icon_path}" -o "code_logo.png"
-    composite "code_logo.png" -gravity center "icons/template_macos.png" "code_1024.png"
-    convert "code_1024.png" -resize 512x512 code_512.png
-    convert "code_1024.png" -resize 256x256 code_256.png
-    convert "code_1024.png" -resize 128x128 code_128.png
+    if [[ "${THEME}" == "neira" ]]; then
+      # Используем готовую иконку Neira для macOS
+      cp "icons/neira/neira-512.icns" "${SRC_PREFIX}src/${QUALITY}/resources/darwin/code.icns"
+      echo "Использована готовая иконка Neira для macOS"
+    else
+      # Стандартная генерация для других тем
+      local icon_path
+      icon_path=$(get_icon_path "codium_cnl.svg" "512")
+      
+      rsvg-convert -w 800 -h 800 "${icon_path}" -o "code_logo.png"
+      composite "code_logo.png" -gravity center "icons/template_macos.png" "code_1024.png"
+      convert "code_1024.png" -resize 512x512 code_512.png
+      convert "code_1024.png" -resize 256x256 code_256.png
+      convert "code_1024.png" -resize 128x128 code_128.png
 
-    png2icns "${SRC_PREFIX}src/${QUALITY}/resources/darwin/code.icns" code_512.png code_256.png code_128.png
+      png2icns "${SRC_PREFIX}src/${QUALITY}/resources/darwin/code.icns" code_512.png code_256.png code_128.png
 
-    rm code_1024.png code_512.png code_256.png code_128.png code_logo.png
+      rm code_1024.png code_512.png code_256.png code_128.png code_logo.png
+    fi
   fi
 } # }}}
 
