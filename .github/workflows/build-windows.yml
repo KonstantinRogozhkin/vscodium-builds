@@ -36,7 +36,7 @@ jobs:
       SHOULD_BUILD: ${{ env.SHOULD_BUILD }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Clone VSCode repo
         run: ./get_repo.sh
@@ -63,7 +63,7 @@ jobs:
       BUILD_SOURCEVERSION: ${{ env.BUILD_SOURCEVERSION }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: env.SHOULD_BUILD == 'yes'
 
       - name: Setup GCC
@@ -138,7 +138,7 @@ jobs:
       VSCODE_ARCH: ${{ matrix.vscode_arch }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: env.SHOULD_BUILD == 'yes'
 
       - name: Setup Node.js environment
